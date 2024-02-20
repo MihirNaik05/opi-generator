@@ -887,7 +887,7 @@ class _ChartWidget(ActionWidget):
         -----------------
         has_xaxis : bool
             If has X-axis for non-timestamp, e.g. False for StripChart, while True for XYPlot.
-            Defaults True. 
+            Defaults True.
         """
         super().__init__(type_id, x, y, width, height)
         self.trace_count = 0
@@ -897,9 +897,9 @@ class _ChartWidget(ActionWidget):
         # Phoebus renders axes vastly different from CS-Studio, so data is
         # stored differently for it as well
         self.phoebus_axes = [
-            # legend, autoscale?, min, max, grid?, color, title_font, scale_font, [if has non-temporal xaixs?] 
-            ["X Axis", True, 0, 100, True, None, None, None, self._has_xaxis],
-            ["Y Axis 1", True, 0, 100, True, None, None, None]]
+            # legend, autoscale?, min, max, grid?, visible?, color, title_font, scale_font, [if has non-temporal xaixs?] 
+            ["X Axis", True, 0, 100, True, True, None, None, None, self._has_xaxis],
+            ["Y Axis 1", True, 0, 100, True, True, None, None, None]]
         self.phoebus_traces = []
 
         # Sets the x axis and first y axis to show their grids
@@ -919,19 +919,24 @@ class _ChartWidget(ActionWidget):
 
         # Phoebus
         self.phoebus_axes.append(
-            [f"Y Axis {self.axis_count - 1}", True, 0, 100, True, None, None, None])
+            [f"Y Axis {self.axis_count - 1}", True, 0, 100, True, True, None, None, None])
 
         self.set_axis_grid(True, self.axis_count - 1)
 
         return self.axis_count
 
+    def hide_axis(self, hidden: bool, axis=0):
+        """Hide axis or not.
+        """
+        self.phoebus_axes[axis][5] = not hidden
+
     def set_axis_font(self, type: str, font, axis=0):
         """Set title or scale font, only support Phoebus now.
         """
         if type == "title":
-            self.phoebus_axes[axis][6] = font
-        elif type == "scale":
             self.phoebus_axes[axis][7] = font
+        elif type == "scale":
+            self.phoebus_axes[axis][8] = font
 
     def set_axis_scale(self, minimum, maximum, axis=0):
         """Sets the minimum and maximum values for a given axis, and disables the auto-scaling.
@@ -949,7 +954,7 @@ class _ChartWidget(ActionWidget):
         setattr(self, f"axis_{axis}_maximum", maximum)
 
         # Phoebus
-        self.phoebus_axes[axis][1] = False
+        self.phoebus_axes[axis][1] = False # autoscale
         self.phoebus_axes[axis][2] = minimum
         self.phoebus_axes[axis][3] = maximum
 
@@ -992,7 +997,7 @@ class _ChartWidget(ActionWidget):
             setattr(self, f"axis_{axis}_grid_color", color)
 
             # Phoebus
-            self.phoebus_axes[axis][5] = color
+            self.phoebus_axes[axis][6] = color
 
     def set_axis_grid(self, grid_on=True, axis=0):
         """Sets if the grid corresponding to an axis should be shown.

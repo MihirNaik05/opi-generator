@@ -18,7 +18,8 @@ class OpiAxis:
 
         # Render non-color attributes
         attribute_names = [
-            'title', 'autoscale', 'minimum', 'maximum', 'show_grid'
+            'title', 'autoscale', 'minimum', 'maximum', 'show_grid',
+            'visible',
         ]
         for attribute_name, attribute_value in zip(attribute_names,
                                                    axis_values):
@@ -28,14 +29,14 @@ class OpiAxis:
                           attribute_name).text = str(attribute_value)
 
         # Render color attribute separately
-        color = axis_values[5]
+        color = axis_values[6]
         if color is not None:
             # Removes transparency for the axis color
             solid_color = Color((color.red, color.green, color.blue), None)
             self._color.render(axis_node, 'color', solid_color)
 
         # title, scale font
-        for font, s in zip(axis_values[6:8], ('title', 'scale')):
+        for font, s in zip(axis_values[7:9], ('title', 'scale')):
             if font is not None:
                 OpiFont().render(axis_node, f"{s}_font", font)
 
