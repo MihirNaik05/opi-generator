@@ -7,3 +7,4 @@ from .widgets import Led
 
 from .widgets import GroupingContainer
 from .widgets import EmbeddedContainer
+from .widgets import CheckBox

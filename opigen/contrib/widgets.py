@@ -55,7 +55,7 @@ class EmbeddedContainer(_widgets.EmbeddedContainer):
 class GroupingContainer(_widgets.GroupingContainer):
 
     def __init__(self, x, y, width, height, name=None):
-        super(self.__class__, self).__init__(x, y, width, height, name)
+        _widgets.GroupingContainer.__init__(self, x, y, width, height, name)
         #
         self.set_bg_color(DEFAULT_DISPLAY_BG)
 
@@ -87,3 +87,27 @@ class Led(_widgets.Led):
         self.bulb_border = 1
         self.set_border(
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive))
+
+
+class CheckBox(GroupingContainer):
+    """CheckBox with background color support.
+    """
+    def __init__(self, x, y, width, height, text, pv_name, **kws):
+        GroupingContainer.__init__(self, x, y, width + 5, height + 5, "")
+        self.chkbox = chkbox = _widgets.CheckBox(
+            kws.get("x0", 1), kws.get("y0", 1), width, height, text, pv_name)
+        self.add_child(chkbox)
+
+    @property
+    def pv_name(self):
+        return self.chkbox.pv_name
+
+    @pv_name.setter
+    def pv_name(self, pv_name: str):
+        self.chkbox.pv_name = pv_name
+
+    def set_fg_color(self, c):
+        self.chkbox.set_fg_color(c)
+
+    def set_font(self, font):
+        self.chkbox.set_font(font)
