@@ -704,6 +704,7 @@ class MenuButton(ActionWidget):
 class CheckBox(ActionWidget):
 
     TYPE_ID = 'org.csstudio.opibuilder.widgets.checkbox'
+    TYPE = 'checkbox'
 
     def __init__(self, x, y, width, height, text, pv_name):
         super(CheckBox, self).__init__(CheckBox.TYPE_ID, x, y, width, height)
