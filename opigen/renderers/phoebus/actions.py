@@ -37,6 +37,11 @@ class OpiExecuteCommand(OpiAction):
     ACTION_TYPE = 'command'
 
 
+class FileOpen(OpiAction):
+    """Renderer for open File action."""
+    ACTION_TYPE = "open_file"
+
+
 class OpiOpen(OpiAction):
     """Renderer for open OPI actions."""
     ACTION_TYPE = 'open_display'
@@ -89,7 +94,8 @@ class OpiActions(object):
         actions.ExecuteCommand: OpiExecuteCommand,
         actions.WritePv: OpiWritePv,
         actions.Exit: OpiExit,
-        actions.OpenOpi: OpiOpen
+        actions.OpenOpi: OpiOpen,
+        actions.OpenFile: FileOpen
     }
 
     def render(self, widget_node, tag_name, actions_model):

@@ -448,6 +448,9 @@ class ActionWidget(Widget):
         self.actions.add_action(
             actions.OpenOpi(path, mode, description, macros, parent_macros))
 
+    def add_open_file(self, path: str, description: str = "Open File"):
+        self.actions.add_action(actions.OpenFile(path, description))
+
     def add_exit(self):
         self.actions.add_action(actions.Exit())
 

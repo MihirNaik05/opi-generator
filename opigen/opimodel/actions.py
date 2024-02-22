@@ -89,6 +89,13 @@ class ExecuteCommand(object):
         self.phoebus_description = description
 
 
+class OpenFile(object):
+    """Action that opens a local file."""
+    def __init__(self, path: str, description: str):
+        self.phoebus_file = path
+        self.phoebus_description = description
+
+
 class OpenOpi(object):
     """Action that opens another opi file."""
 
