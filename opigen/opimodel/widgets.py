@@ -492,6 +492,15 @@ class Display(Widget):
             min_width, min_height, autoscale)
 
 
+class FileSelector(ActionWidget):
+    TYPE_ID = "To-Be-Supported-for-BOY"
+    TYPE = "fileselector"
+
+    def __init__(self, x, y, width, height, pv_name):
+        super(FileSelector, self).__init__(FileSelector.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
+
+
 class Rectangle(ActionWidget):
 
     TYPE_ID = 'org.csstudio.opibuilder.widgets.Rectangle'
