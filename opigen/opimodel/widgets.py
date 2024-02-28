@@ -693,6 +693,7 @@ class ActionButton(ActionWidget):
         self.text = text
         if style is not None:
             self.set_basic_style(style)
+        self.border_alarm_sensitive = False
 
 
 class MenuButton(ActionWidget):

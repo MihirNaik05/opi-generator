@@ -46,6 +46,7 @@ transparent = "transparent"
 
 [ActionButton]
 text = "text"
+border_alarm_sensitive = "border_alarm_sensitive"
 
 [ToggleButton]
 on_label = "on_label"
