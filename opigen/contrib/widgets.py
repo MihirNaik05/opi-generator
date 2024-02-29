@@ -1,4 +1,5 @@
 import opigen.opimodel.widgets as _widgets
+from opigen import fonts, colors
 from opigen.opimodel.colors import Color
 from opigen.opimodel.borders import Border, BorderStyle
 import os
@@ -58,6 +59,10 @@ class GroupingContainer(_widgets.GroupingContainer):
         _widgets.GroupingContainer.__init__(self, x, y, width, height, name)
         #
         self.set_bg_color(DEFAULT_DISPLAY_BG)
+        # preset font
+        _widgets.GroupingContainer.set_font(self, fonts.GROUPBOX_NAME)
+        _widgets.GroupingContainer.set_border(self,
+                Border(BorderStyle.GROUP_BOX, 1, colors.ASBESTOS, False))
 
 
 class TextUpdate(_widgets.TextUpdate):
