@@ -492,6 +492,24 @@ class Display(Widget):
             min_width, min_height, autoscale)
 
 
+class ProgressBar(ActionWidget):
+    TYPE_ID = "To-Be-Supported-for-BOY"
+    TYPE = "progressbar"
+
+    def __init__(self, x, y, width, height, pv_name,
+                 minimum: float = 0, maximum: float = 100,
+                 limits_from_pv: bool = False,
+                 border_alarm_sensitive: bool = False):
+        super(ProgressBar, self).__init__(ProgressBar.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
+        self.minimum = self.phoebus_minimum = minimum
+        self.maximum = self.phoebus_maximum = maximum
+        self.limits_from_pv = limits_from_pv
+        self.phoebus_limits_from_pv = limits_from_pv
+        self.border_alarm_sensitive = border_alarm_sensitive
+        self.phoebus_border_alarm_sensitive = border_alarm_sensitive
+
+
 class FileSelector(ActionWidget):
     TYPE_ID = "To-Be-Supported-for-BOY"
     TYPE = "fileselector"
@@ -904,7 +922,7 @@ class _ChartWidget(ActionWidget):
         # Phoebus renders axes vastly different from CS-Studio, so data is
         # stored differently for it as well
         self.phoebus_axes = [
-            # legend, autoscale?, min, max, grid?, visible?, color, title_font, scale_font, [if has non-temporal xaixs?] 
+            # legend, autoscale?, min, max, grid?, visible?, color, title_font, scale_font, [if has non-temporal xaixs?]
             ["X Axis", True, 0, 100, True, True, None, None, None, self._has_xaxis],
             ["Y Axis 1", True, 0, 100, True, True, None, None, None]]
         self.phoebus_traces = []
