@@ -90,3 +90,6 @@ show_grid = "show_grid"
 
 [CheckBox]
 label = "label"
+
+[ProgressBar]
+fill_color = "fill_color"
