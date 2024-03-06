@@ -1043,6 +1043,7 @@ class _ChartWidget(ActionWidget):
     def add_trace(self,
                   y_pv,
                   x_pv=None,
+                  yerr_pv=None,
                   legend=None,
                   trace_type=TraceType.BARS,
                   line_width=10,
@@ -1063,6 +1064,7 @@ class _ChartWidget(ActionWidget):
         Args:
             y_pv (str): The process variable for the y-values of the trace.
             x_pv (str, optional): The process variable for the x-values of the trace.
+            yerr_pv (str, optional): The process variable for the yerr-values of the trace.
             legend (str, optional): The name that will be displayed on the legend.
             line_width (int, optional): The line width for the trace. Defaults to 10.
             trace_color (Color, optional): The color for the trace.
@@ -1102,7 +1104,7 @@ class _ChartWidget(ActionWidget):
 
         # Phoebus
         self.phoebus_traces.append([
-            self.get_type(), legend, x_pv, y_pv, trace_type, line_width,
+            self.get_type(), legend, x_pv, y_pv, yerr_pv, trace_type, line_width,
             line_style, point_type, point_size,
             y_axis, trace_color
         ])
