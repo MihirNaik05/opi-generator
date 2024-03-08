@@ -47,6 +47,9 @@ transparent = "transparent"
 [ActionButton]
 text = "text"
 border_alarm_sensitive = "border_alarm_sensitive"
+confirm_message = "confirm_message"
+show_confirm_dialog = "show_confirm_dialog"
+password = "password"
 
 [ToggleButton]
 on_label = "on_label"
