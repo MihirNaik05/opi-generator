@@ -15,6 +15,12 @@ RES_DIRPATH = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                            'images'))
 
 
+class ActionButton(_widgets.ActionButton):
+    def __init__(self, x, y, width, height, text):
+        super(self.__class__, self).__init__(x, y, width, height, text)
+        self.set_font(fonts.DEFAULT)
+
+
 class SlideButton(_widgets.ImageBoolButton):
 
     # Emulates SlideButton in Phoebus
@@ -65,6 +71,12 @@ class GroupingContainer(_widgets.GroupingContainer):
                 Border(BorderStyle.GROUP_BOX, 1, colors.ASBESTOS, False))
 
 
+class Label(_widgets.Label):
+    def __init__(self, x, y, width, height, text):
+        super(self.__class__, self).__init__(x, y, width, height, text)
+        self.set_font(fonts.DEFAULT)
+
+
 class TextUpdate(_widgets.TextUpdate):
 
     def __init__(self, x, y, width, height, pv_name, alarm_sensitive=True):
@@ -73,6 +85,7 @@ class TextUpdate(_widgets.TextUpdate):
         self.set_bg_color(DEFAULT_TEXTUPDATE_BG)
         self.set_border(
             Border(BorderStyle.NONE, 0, DEFAULT_BORDER_COLOR, alarm_sensitive))
+        self.set_font(fonts.DEFAULT)
 
 
 class TextEntry(_widgets.TextEntry):
@@ -81,6 +94,7 @@ class TextEntry(_widgets.TextEntry):
         super(self.__class__, self).__init__(x, y, width, height, pv_name)
         #
         self.set_bg_color(DEFAULT_TEXTENTRY_BG)
+        self.set_font(fonts.DEFAULT)
 
 
 class Led(_widgets.Led):
@@ -92,6 +106,8 @@ class Led(_widgets.Led):
         self.bulb_border = 1
         self.set_border(
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive))
+        self.off_color = colors.ALIZARIN
+        self.on_color = colors.EMERLAND
 
 
 class CheckBox(GroupingContainer):

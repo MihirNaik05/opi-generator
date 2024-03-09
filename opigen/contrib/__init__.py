@@ -8,3 +8,5 @@ from .widgets import Led
 from .widgets import GroupingContainer
 from .widgets import EmbeddedContainer
 from .widgets import CheckBox
+from .widgets import Label
+from .widgets import ActionButton
