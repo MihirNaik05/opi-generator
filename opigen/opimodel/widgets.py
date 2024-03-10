@@ -796,6 +796,17 @@ class Byte(Widget):
             self.startBit = start_bit
 
 
+class Image(Widget):
+
+    TYPE_ID = 'TO-BE-SUPPORTED'
+    TYPE = 'picture'
+
+    def __init__(self, x: int, y: int, width: int, height: int, file: str):
+        super(Image, self).__init__(Image.TYPE_ID, x, y, width, height)
+        self.file = file
+        self.phoebus_file = file
+
+
 class Symbol(ActionWidget):
     TYPE_ID = 'org.csstudio.opibuilder.widgets.edm.symbolwidget'
 
