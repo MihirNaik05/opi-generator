@@ -29,6 +29,7 @@ STYLE_MAP = {
 
 class Font(object):
     """Representation of a font."""
+    fontname_set = set()
 
     def __init__(self,
                  name=None,
@@ -54,6 +55,9 @@ class Font(object):
         else:
             _style = style
         self.style = _style
+        # register the name of font definition
+        if name is not None:
+            Font.fontname_set.add(name)
 
     def __eq__(self, other):
         val = (self.size == other.size
@@ -74,6 +78,16 @@ class Font(object):
 
     def __repr__(self):
         return str(self)
+
+    def is_mono(self):
+        return "mono" in self.name.lower() or "mono" in self.fontface.lower()
+
+    def is_sans(self):
+        return "sans" in self.name.lower() or "sans" in self.fontface.lower()
+
+    def is_serif(self):
+        return "serif" in self.name.lower() or "serif" in self.fontface.lower()
+
 
 _pattern = re.compile(
     r'([0-9a-zA-Z ]+)\s*=\s*([a-zA-Z ]+)\s*-\s*([a-zA-Z ]+)\s*-\s*([0-9]+)\s*(.*)'
@@ -123,3 +137,34 @@ def parse_font_file(filename: str):
                       _is_pixel,
                       phoebus_size=_size_bob)
             utils.add_attr_to_module(_module_name, _f, sys.modules[__name__])
+
+
+def update_fontface(fontface: str, mono_fontface: str = None, serif_fontface: str = None):
+    """Update fontface (family) for all registered fonts, if mono_fontface or serif_fontface
+    is not defined, do not update.
+
+    This function should be called at the end of import, and affects globally for all defined
+    fonts.
+    """
+    for font_name in Font.fontname_set:
+        font = getattr(sys.modules[__name__], utils.mangle_name(font_name))
+        if font.is_mono():
+            if mono_fontface is not None:
+                font.fontface = mono_fontface
+        elif font.is_serif():
+            if serif_fontface is not None:
+                font.fontface = serif_fontface
+        else:
+            font.fontface = fontface
+
+
+def update_fontsize(increments: float = 1.0, unit: str = "px"):
+    """Change the fontsize for all registered fonts. If unit is "em", increase the percentage
+    of increments.
+    """
+    for font_name in Font.fontname_set:
+        font = getattr(sys.modules[__name__], utils.mangle_name(font_name))
+        if unit == "px":
+            font.phoebus_size += increments
+        else:
+            font.phoebus_size += font.phoebus_size * increments
