@@ -41,6 +41,11 @@ precision = "precision"
 show_units = "show_units"
 precision = "precision"
 
+[Spinner]
+precision = "precision"
+minimum = "minimum"
+maximum = "maximum"
+
 [GroupingContainer]
 transparent = "transparent"
 

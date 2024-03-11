@@ -610,6 +610,15 @@ class TextEntry(Widget):
         if style is not None:
             self.set_basic_style(style)
 
+class Spinner(Widget):
+
+    TYPE_ID = "TO-Be-Supported-BOY"
+    TYPE = 'spinner'
+
+    def __init__(self, x, y, width, height, pv_name: str):
+        super(Spinner, self).__init__(Spinner.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
+
 
 class GroupingContainer(Widget):
 
