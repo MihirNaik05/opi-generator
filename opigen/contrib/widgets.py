@@ -1,5 +1,5 @@
 import opigen.opimodel.widgets as _widgets
-from opigen import fonts, colors
+from opigen import fonts, colors, rules
 from opigen.opimodel.colors import Color
 from opigen.opimodel.borders import Border, BorderStyle
 import os
@@ -13,6 +13,26 @@ DEFAULT_BORDER_COLOR = Color((0, 128, 255), "BORDER_BLUE")
 # absolute path for resource files, e.g. images.
 RES_DIRPATH = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                            'images'))
+
+
+class ProgressBar(_widgets.ProgressBar):
+
+    def __init__(self, x: int, y: int, width: int, height: int,
+                 pv_name: str, minimum: float = 0, maximum: float = 100,
+                 limits_from_pv: bool = False,
+                 border_alarm_sensitive: bool = False):
+        super(self.__class__, self).__init__(x, y, width, height, pv_name,
+                minimum, maximum, limits_from_pv, border_alarm_sensitive)
+        self.fill_color = colors.EMERLAND
+        self.add_rule(
+                rules.SelectionRule(
+                    "fill_color", pv_name, "Change color per severity",
+                    # -1: invalid, 1: major, 2: minor
+                    sevr_options=[
+                        (-1, colors.INVALID),
+                        (1, colors.ALIZARIN),
+                        (2, colors.CARROT)
+                    ]))
 
 
 class ActionButton(_widgets.ActionButton):

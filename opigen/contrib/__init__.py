@@ -10,3 +10,4 @@ from .widgets import EmbeddedContainer
 from .widgets import CheckBox
 from .widgets import Label
 from .widgets import ActionButton
+from .widgets import ProgressBar
