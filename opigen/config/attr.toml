@@ -106,3 +106,4 @@ fill_color = "fill_color"
 [LinearMeter]
 enable_gradient = "is_gradient_enabled"
 highlight_active_region = "is_highlighting_of_active_regions_enabled"
+show_units = "show_units"
