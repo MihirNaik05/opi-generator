@@ -518,6 +518,24 @@ class LinearMeter(ActionWidget):
         self.highlight_active_region = highlight_active_region
 
 
+class ScaledSlider(ActionWidget):
+    TYPE_ID = "To-Be-Supported-for-BOY"
+    TYPE = "scaledslider"
+
+    def __init__(self, x, y, width, height, pv_name,
+                 minimum: float = 0, maximum: float = 100,
+                 limits_from_pv: bool = False,
+                 border_alarm_sensitive: bool = False):
+        super(ScaledSlider, self).__init__(ScaledSlider.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
+        self.minimum = self.phoebus_minimum = minimum
+        self.maximum = self.phoebus_maximum = maximum
+        self.limits_from_pv = limits_from_pv
+        self.phoebus_limits_from_pv = limits_from_pv
+        self.border_alarm_sensitive = border_alarm_sensitive
+        self.phoebus_border_alarm_sensitive = border_alarm_sensitive
+
+
 class ProgressBar(ActionWidget):
     TYPE_ID = "To-Be-Supported-for-BOY"
     TYPE = "progressbar"
