@@ -492,6 +492,32 @@ class Display(Widget):
             min_width, min_height, autoscale)
 
 
+class LinearMeter(ActionWidget):
+    TYPE_ID = "To-Be-Supported-for-BOY"
+    TYPE = "linearmeter"
+
+    def __init__(self, x, y, width, height, pv_name,
+                 minimum: float = 0, maximum: float = 100,
+                 limits_from_pv: bool = False,
+                 border_alarm_sensitive: bool = False,
+                 level_lolo: float = 10.0, level_low: float = 20.0,
+                 level_high: float = 80.0, level_hihi: float = 90.0,
+                 enable_gradient: bool = False,
+                 highlight_active_region: bool = True):
+        super(LinearMeter, self).__init__(LinearMeter.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
+        self.minimum = self.phoebus_minimum = minimum
+        self.maximum = self.phoebus_maximum = maximum
+        self.limits_from_pv = limits_from_pv
+        self.phoebus_limits_from_pv = limits_from_pv
+        self.border_alarm_sensitive = border_alarm_sensitive
+        self.phoebus_border_alarm_sensitive = border_alarm_sensitive
+        self.level_lolo, self.level_low = level_lolo, level_low
+        self.level_high, self.level_hihi = level_high, level_hihi
+        self.enable_gradient = enable_gradient
+        self.highlight_active_region = highlight_active_region
+
+
 class ProgressBar(ActionWidget):
     TYPE_ID = "To-Be-Supported-for-BOY"
     TYPE = "progressbar"
