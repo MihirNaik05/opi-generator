@@ -114,11 +114,13 @@ class TextUpdate(_widgets.TextUpdate):
 
 class TextEntry(_widgets.TextEntry):
 
-    def __init__(self, x, y, width, height, pv_name):
+    def __init__(self, x, y, width, height, pv_name, border_alarm_sensitive: bool = True):
         super(self.__class__, self).__init__(x, y, width, height, pv_name)
         #
         self.set_bg_color(DEFAULT_TEXTENTRY_BG)
         self.set_font(fonts.DEFAULT)
+        self.border_alarm_sensitive = border_alarm_sensitive
+        self.phoebus_border_alarm_sensitive = border_alarm_sensitive
 
 
 class Spinner(_widgets.Spinner):
