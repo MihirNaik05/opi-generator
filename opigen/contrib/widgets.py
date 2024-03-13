@@ -17,21 +17,25 @@ RES_DIRPATH = os.path.abspath(os.path.join(os.path.dirname(__file__),
 
 class ProgressBar(_widgets.ProgressBar):
 
+    MINOR_COLOR = colors.CARROT
+    MAJOR_COLOR = colors.ALIZARIN
+    INVALID_COLOR = colors.INVALID
+    NORMAL_COLOR = colors.EMERLAND
     def __init__(self, x: int, y: int, width: int, height: int,
                  pv_name: str, minimum: float = 0, maximum: float = 100,
                  limits_from_pv: bool = False,
                  border_alarm_sensitive: bool = False):
         super(self.__class__, self).__init__(x, y, width, height, pv_name,
                 minimum, maximum, limits_from_pv, border_alarm_sensitive)
-        self.fill_color = colors.EMERLAND
+        self.fill_color = ProgressBar.NORMAL_COLOR
         self.add_rule(
                 rules.SelectionRule(
                     "fill_color", pv_name, "Change color per severity",
                     # -1: invalid, 1: major, 2: minor
                     sevr_options=[
-                        (-1, colors.INVALID),
-                        (1, colors.ALIZARIN),
-                        (2, colors.CARROT)
+                        (-1, ProgressBar.INVALID_COLOR),
+                        (1, ProgressBar.MAJOR_COLOR),
+                        (2, ProgressBar.MINOR_COLOR)
                     ]))
 
 
