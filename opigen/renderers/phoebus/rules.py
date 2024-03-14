@@ -77,6 +77,13 @@ class OpiRule(object):
         pv_node = et.SubElement(self.rule_node, 'pv_name')
         # pv_node.set('trig', 'true')
         pv_node.text = rule_model._pv
+
+        # extra PVs
+        for i_pv, i_trig in rule_model._extra_pvs:
+            _extra_pv_node = et.SubElement(self.rule_node, 'pv_name').text = i_pv
+            if not i_trig:
+                _extra_pv_node.set('trigger', 'false')
+        #
         auto_fill_val = rule_model.get_auto_fill_val()
 
         if rule_model._sevr_options is not None:

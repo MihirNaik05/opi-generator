@@ -16,6 +16,7 @@ class Rule(object):
         self._prop_id = prop_id
         self._name = type(self).__name__ if name is None else name
         self._out_exp = out_exp
+        self._extra_pvs = []
 
     def get_prop_id(self):
         return self._prop_id
@@ -25,6 +26,14 @@ class Rule(object):
 
     def get_out_exp(self):
         return self._out_exp
+
+    def add_extra_pv(self, pv_name: str, triggered: bool = True):
+        """Add extra PV, marking as triggered or not.
+        # return self to support widget.add_rule(
+            <rule-class>.add_extra_pv(xxx))
+        """
+        self._extra_pvs.append((pv_name, triggered))
+        return self
 
 
 class RawRule(Rule):
