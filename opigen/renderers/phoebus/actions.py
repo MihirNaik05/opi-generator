@@ -101,11 +101,13 @@ class OpiActions(object):
     def render(self, widget_node, tag_name, actions_model):
         if actions_model:
             actions_node = et.SubElement(widget_node, tag_name)
-            # phoebus does not have 'hook' or 'hook_all' option
-            # hook_first = 'true' if actions_model.get_hook_first() else 'false'
-            # hook_all = 'true' if actions_model.get_hook_all() else 'false'
+            hook_first = 'true' if actions_model.get_hook_first() else 'false'
+            hook_all = 'true' if actions_model.get_hook_all() else 'false'
             # actions_node.set('hook', hook_first)
             # actions_node.set('hook_all', hook_all)
+            # phoebus does not have 'hook' or 'hook_all' option, but onlt 'execute_as_one'
+            if hook_all == 'true':
+                actions_node.set('execute_as_one', hook_all)
             for action_model in actions_model:
                 action_class = OpiActions.ACTION_MAPPING[type(action_model)]
                 renderer = action_class(text.OpiText())

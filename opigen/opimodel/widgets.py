@@ -412,6 +412,11 @@ class ActionWidget(Widget):
         self.actions = actions.ActionsModel(hook_first, hook_all)
         self.phoebus_actions = self.actions
 
+    def execute_as_one(self, execute_all: bool = True):
+        """Execute all action in one click or not.
+        """
+        self.actions.set_hook_all(execute_all)
+
     def add_action(self, action):
         """
         Add any action to the list of actions.
