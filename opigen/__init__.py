@@ -17,3 +17,11 @@ from .config import get_font_def_path
 fonts.parse_font_file(get_font_def_path())
 # load color def
 colors.parse_color_file(get_color_def_path())
+
+# predefined colors
+ALARM_COLORS = {
+    'invalid': colors.WISTERIA,
+    'normal': colors.EMERLAND,
+    'minor': colors.CARROT,
+    'major': colors.ALIZARIN,
+}
