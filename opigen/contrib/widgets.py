@@ -1,5 +1,5 @@
 import opigen.opimodel.widgets as _widgets
-from opigen import fonts, colors, rules
+from opigen import fonts, colors, rules, scripts
 from opigen.opimodel.colors import Color
 from opigen.opimodel.borders import Border, BorderStyle
 import os
@@ -73,6 +73,27 @@ class Display(_widgets.Display):
         self.set_bg_color(DEFAULT_DISPLAY_BG)
         if name is not None:
             self.name = name
+
+    def init_vars(self, vars: list[str]):
+    #def init_vars(self, names: list[str], values: list, dtypes: list[str]):
+        """Use to initialize a list of variables (e.g. loc variables).
+        dtype: str or number
+        As of now (2024/03/14, Display dose not support script.)
+        """
+        for var in vars:
+            w = _widgets.TextEntry(0, 0, 0, 0, var)
+            w.visible = False
+            self.add_child(w)
+#        script = scripts.Script(script_text="""from org.csstudio.display.builder.runtime.script import PVUtil
+#        names = {}.split(",")
+#        values = {}.split(",")
+#        dtypes = {}.split(",")
+#        for name, value, dtype in zip(names, values, dtypes):
+#            PVUtil.createPV(name, 5000)
+#            if dtype != 'str':
+#                value = float(value)
+#            PVUtil.writePV(name, value, 5000)
+#        """.format(','.join(names), ','.join([str(v) for v in values]), ','.join(dtypes)))
 
 
 class EmbeddedContainer(_widgets.EmbeddedContainer):
