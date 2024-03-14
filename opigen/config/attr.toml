@@ -55,6 +55,7 @@ border_alarm_sensitive = "border_alarm_sensitive"
 confirm_message = "confirm_message"
 show_confirm_dialog = "show_confirm_dialog"
 password = "password"
+transparent = "transparent"
 
 [ToggleButton]
 on_label = "on_label"
@@ -107,3 +108,15 @@ fill_color = "fill_color"
 enable_gradient = "is_gradient_enabled"
 highlight_active_region = "is_highlighting_of_active_regions_enabled"
 show_units = "show_units"
+level_hihi = "level_hihi"
+level_high = "level_high"
+level_low = "level_low"
+level_lolo = "level_lolo"
+scale_visible = "scale_visible"
+
+[ScaledSlider]
+show_hihi = "show_hihi"
+show_high = "show_high"
+show_low = "show_low"
+show_lolo = "show_lolo"
+show_scale = "show_scale"
