@@ -5,7 +5,7 @@ import lxml.etree as et
 from .actions import OpiActions
 from .axes import OpiAxis
 from .borders import OpiBorder
-from .colors import OpiColor
+from .colors import OpiColor, OpiColorLinearMeter
 from .fonts import OpiFont
 from .points import OpiPoints
 from .rules import OpiRule
@@ -35,6 +35,8 @@ def get_opi_renderer(widget):
     wr.add_renderer('line_color', cr)
     wr.add_renderer('border_color', cr)
     wr.add_renderer('led_border_color', cr)
+    # LinearMeter: <colors>
+    wr.add_renderer('linear_meter_colors', OpiColorLinearMeter())
 
     # Tank widget
     wr.add_renderer('color_fillbackground', cr)

@@ -505,6 +505,9 @@ class LinearMeter(ActionWidget):
                  enable_gradient: bool = False,
                  highlight_active_region: bool = True):
         super(LinearMeter, self).__init__(LinearMeter.TYPE_ID, x, y, width, height)
+        # dict, {attr_name: (is_color_attr?, attr_value)}
+        self.phoebus_linear_meter_colors = self.linear_meter_colors = {}
+        #
         self.pv_name = pv_name
         self.minimum = self.phoebus_minimum = minimum
         self.maximum = self.phoebus_maximum = maximum
@@ -516,6 +519,44 @@ class LinearMeter(ActionWidget):
         self.level_high, self.level_hihi = level_high, level_hihi
         self.enable_gradient = enable_gradient
         self.highlight_active_region = highlight_active_region
+
+    @property
+    def enable_gradient(self):
+        return self.linear_meter_colors["is_gradient_enabled"]
+
+    @enable_gradient.setter
+    def enable_gradient(self, f: bool):
+        self.linear_meter_colors["is_gradient_enabled"] = (False, f)
+
+    @property
+    def highlight_active_region(self):
+        return self.linear_meter_colors["highlight_active_region"]
+
+    @highlight_active_region.setter
+    def highlight_active_region(self, f: bool):
+        self.linear_meter_colors[
+            "is_highlighting_of_active_regions_enabled"] = (False, f)
+
+    def set_normal_color(self, color: Color):
+        """Set color for normal status.
+        """
+        self.linear_meter_colors["normal_status_color"] = (True, color)
+    
+    def set_minor_color(self, color: Color):
+        """Set color for minor status.
+        """
+        self.linear_meter_colors["minor_warning_color"] = (True, color)
+
+    def set_major_color(self, color: Color):
+        """Set color for major status.
+        """
+        self.linear_meter_colors["major_warning_color"] = (True, color)
+
+    def set_knob_color(self, color: Color):
+        self.linear_meter_colors["knob_color"] = (True, color)
+
+    def set_needle_color(self, color: Color):
+        self.linear_meter_colors["needle_color"] = (True, color)
 
 
 class ScaledSlider(ActionWidget):
