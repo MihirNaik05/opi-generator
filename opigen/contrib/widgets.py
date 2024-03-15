@@ -74,6 +74,36 @@ class Display(_widgets.Display):
         if name is not None:
             self.name = name
 
+    def get_opt_size(self):
+        """Get the optimal size (width, height) to contain all the
+        child widgets.
+        """
+        children_parent_not_group = []
+        for i in self.get_children():
+            if hasattr(i, "visible") and not i.visible:
+                print(f"Skipping hidden widget: {i.name}")
+                continue
+            if isinstance(i.get_parent(), _widgets.GroupingContainer):
+                print(f"Skipping group child widget: {i.name}")
+                continue
+            children_parent_not_group.append(i)
+        xlist = [i.x for i in children_parent_not_group]
+        xlist += [i.x + i.width for i in children_parent_not_group]
+        ylist = [i.y for i in children_parent_not_group]
+        ylist += [i.y + i.height for i in children_parent_not_group]
+        min_x, max_x = min(xlist), max(xlist)
+        min_y, max_y = min(ylist), max(ylist)
+        opt_w = max_x - min_x
+        opt_h = max_y - min_y
+        return opt_w, opt_h
+
+    def set_opt_size(self, dw: int = 15, dh: int = 15):
+        """Adjust the display size to best contain all child widgets.
+        """
+        w, h = self.get_opt_size()
+        self.width = w + dw
+        self.height = h + dh
+
     def init_vars(self, vars: list[str]):
     #def init_vars(self, names: list[str], values: list, dtypes: list[str]):
         """Use to initialize a list of variables (e.g. loc variables).
