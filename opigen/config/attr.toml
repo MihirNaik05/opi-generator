@@ -97,6 +97,9 @@ show_toolbar = "show_toolbar"
 start = "start"
 show_legend = "show_legend"
 show_grid = "show_grid"
+title_font = "title_font"
+scale_font = "scale_font"
+label_font = "label_font"
 
 [CheckBox]
 label = "label"

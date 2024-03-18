@@ -47,6 +47,10 @@ def get_opi_renderer(widget):
     wr.add_renderer('border', OpiBorder(tr, cr))
 
     wr.add_renderer('font', OpiFont())
+    # StripChart (differ from XYPlot!)
+    wr.add_renderer('title_font', OpiFont())
+    wr.add_renderer('label_font', OpiFont())
+    wr.add_renderer('scale_font', OpiFont())
 
     wr.add_renderer('auto_scale_widgets', OpiDisplayScaling(tr))
     wr.add_renderer('scale_options', OpiScaling(tr))
