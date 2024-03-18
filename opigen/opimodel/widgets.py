@@ -1263,3 +1263,12 @@ class StripChart(_ChartWidget):
         else:
             start_time = start
         self.start = start_time
+
+    def set_label_font(self, font):
+        self.label_font = font
+
+    def set_scale_font(self, font):
+        self.scale_font = font
+
+    def set_title_font(self, font):
+        self.title_font = font
