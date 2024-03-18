@@ -649,6 +649,8 @@ class Line(Widget):
         self.phoebus_points = [(x0 - self.x, y0 - self.y),
                                (x1 - self.x, y1 - self.y)]
         self.line_width = line_width
+        if isinstance(line_style, str):
+            line_style = str2LineStyle(line_style)
         self.line_style = line_style
         self.set_line_color()
 
