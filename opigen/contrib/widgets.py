@@ -203,7 +203,14 @@ class CheckBox(GroupingContainer):
         GroupingContainer.__init__(self, x, y, width + 5, height + 5, "")
         self.chkbox = chkbox = _widgets.CheckBox(
             kws.get("x0", 1), kws.get("y0", 1), width, height, text, pv_name)
+        if kws.get("borderless", False):
+            self.set_borderless()
         self.add_child(chkbox)
+        self.set_font(fonts.DEFAULT)
+
+    def set_borderless(self):
+        self.set_border(
+            Border(BorderStyle.NONE, 0, Color((255, 255, 255)), False))
 
     @property
     def pv_name(self):
