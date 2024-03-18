@@ -359,6 +359,12 @@ class Widget(object):
         self.rules.append(rule)
         self.phoebus_rules.append(rule)
 
+    def reset_rules(self):
+        """Purge all defined rules if any.
+        """
+        self.rules = []
+        self.phoebus_rules = []
+
     def add_script(self, script):
         """Add a script to the widget.
 
@@ -546,7 +552,7 @@ class LinearMeter(ActionWidget):
         """Set color for normal status.
         """
         self.linear_meter_colors["normal_status_color"] = (True, color)
-    
+
     def set_minor_color(self, color: Color):
         """Set color for minor status.
         """
