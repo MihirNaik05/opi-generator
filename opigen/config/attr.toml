@@ -45,6 +45,7 @@ precision = "precision"
 precision = "precision"
 minimum = "minimum"
 maximum = "maximum"
+show_units = "show_units"
 
 [GroupingContainer]
 transparent = "transparent"
@@ -123,3 +124,7 @@ show_high = "show_high"
 show_low = "show_low"
 show_lolo = "show_lolo"
 show_scale = "show_scale"
+
+[Symbol]
+initial_index = "initial_index"
+border_alarm_sensitive = "border_alarm_sensitive"
