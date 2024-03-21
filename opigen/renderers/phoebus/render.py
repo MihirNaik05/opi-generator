@@ -15,6 +15,7 @@ from .tabs import OpiTabs
 from .text import OpiText
 from .traces import OpiTraces
 from .widget import OpiWidget
+from .symbols import OpiSymbols
 
 
 def get_opi_renderer(widget):
@@ -37,6 +38,9 @@ def get_opi_renderer(widget):
     wr.add_renderer('led_border_color', cr)
     # LinearMeter: <colors>
     wr.add_renderer('linear_meter_colors', OpiColorLinearMeter())
+
+    # symbol
+    wr.add_renderer('symbols', OpiSymbols())
 
     # Tank widget
     wr.add_renderer('color_fillbackground', cr)

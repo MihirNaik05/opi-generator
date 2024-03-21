@@ -916,21 +916,35 @@ class Image(Widget):
 
 class Symbol(ActionWidget):
     TYPE_ID = 'org.csstudio.opibuilder.widgets.edm.symbolwidget'
+    TYPE = 'symbol'
 
     def __init__(self,
                  x,
                  y,
                  width,
                  height,
-                 pv,
-                 image_file,
-                 image_width,
-                 image_index=0):
+                 pv_name,
+                 image_file: str = None,
+                 initial_index: int = 0,
+                 border_alarm_sensitive: bool = False):
         super(Symbol, self).__init__(Symbol.TYPE_ID, x, y, width, height)
-        self.pv_name = pv
-        self.image_file = image_file
-        self.image_index = image_index
-        self.sub_image_width = image_width
+        self.pv_name = pv_name
+        self.symbols = []
+        self.phoebus_symbols = []
+        if image_file is not None:
+            self.add_symbol(image_file)
+        self.initial_index = initial_index
+        self.border_alarm_sensitive = border_alarm_sensitive
+
+    def add_symbol(self, image_file: str):
+        """Add a image file as a new symbol.
+        """
+        self.symbols.append(image_file)
+        self.phoebus_symbols.append(image_file)
+
+    def add_symbols(self, image_files: list[str]):
+        self.symbols.extend(image_files)
+        self.phoebus_symbols.extend(image_files)
 
 
 # Tank
