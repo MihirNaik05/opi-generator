@@ -46,6 +46,7 @@ precision = "precision"
 minimum = "minimum"
 maximum = "maximum"
 show_units = "show_units"
+increment = "increment"
 
 [GroupingContainer]
 transparent = "transparent"
