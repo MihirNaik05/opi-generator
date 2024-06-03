@@ -186,7 +186,7 @@ class Spinner(_widgets.Spinner):
 class Led(_widgets.Led):
 
     def __init__(self, x, y, width, height, pv_name, alarm_sensitive=False):
-        super(self.__class__, self).__init__(x, y, width, height, pv_name)
+        _widgets.Led.__init__(self, x, y, width, height, pv_name)
         #
         self.effect_3d = False
         self.bulb_border = 1
@@ -194,6 +194,13 @@ class Led(_widgets.Led):
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive))
         self.off_color = colors.ALIZARIN
         self.on_color = colors.EMERLAND
+
+
+class LedGreenDark(Led):
+    def __init__(self, x, y, width, height, pv_name, alarm_sensitive=False):
+        Led.__init__(self, x, y, width, height, pv_name, alarm_sensitive)
+        self.on_color = colors.GREEN_LED_ON
+        self.off_Color = colors.GREEN_LED_OFF
 
 
 class CheckBox(GroupingContainer):
