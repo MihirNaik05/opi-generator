@@ -31,11 +31,14 @@ def make_title(title: str, width: int, contact: str, **kws):
         Affiliation for the contact.
     clock_pv : str
         PV used for clock display.
+    help_url : str
+        The linked file as help page.
     """
     x0 = kws.get('x0', 5)
     y0 = kws.get('y0', 0)
     height = kws.get('height', 80)
     clock_pv = kws.get('clock_pv', "PHY:DATETIME_NOW")
+    help_url = kws.get('help_url', "")
     title_group = GroupingContainer(x0, y0, width, height, '')
     title_group.set_border(Border(BorderStyle.LINE, 1, colors.ASBESTOS, False))
     _x, _y = 10, 10
@@ -78,6 +81,15 @@ def make_title(title: str, width: int, contact: str, **kws):
     contact_lbl.vertical_alignment = VA_BOTTOM
     contact_lbl.set_font(fonts.HEADER_5)
     title_group.add_child(contact_lbl)
+
+    # help page
+    if help_url != "":
+        w_btn = contact_lbl.width
+        help_btn = widgets.ActionButton(contact_lbl.x - w_btn - 10, contact_lbl.y + 2,
+                                        w_btn, contact_lbl.height, "?")
+        help_btn.add_open_file(help_url)
+        help_btn.tooltip = "Click to read the help page"
+        title_group.add_child(help_btn)
 
     # bottom: horizontal line
     line_y = _y + _h
