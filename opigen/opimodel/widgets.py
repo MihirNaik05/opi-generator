@@ -3,6 +3,8 @@ Module containing widgets to describe opi files.  An opi has a root widget
 of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
+from typing import Literal
+from enum import Enum
 
 from . import actions, scalings
 from .colors import Color
@@ -23,6 +25,17 @@ def _get_widget_version(name: str):
     """Return the version string for the widget.
     """
     return VER_CONF.get(name, DEFAULT_VER)
+
+
+class RotationStep(Enum):
+    # zero degree
+    D0 = 0
+    # 90 degree
+    D90 = 1
+    # 180 degree
+    D180 = 2
+    # -90 degree
+    D_90 = 3
 
 
 class TraceType:
@@ -677,6 +690,9 @@ class Label(Widget):
         self.text = text
         self.horizontal_alignment = HAlign.LEFT
         self.vertical_alignment = VAlign.MIDDLE
+
+    def rotate(self, deg: Literal[RotationStep.D0, RotationStep.D90, RotationStep.D180, RotationStep.D_90]):
+        self.rotation_step = deg.value
 
 
 class TextUpdate(Widget):
