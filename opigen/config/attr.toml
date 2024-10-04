@@ -31,11 +31,13 @@ background_color = "line_color"
 [Label]
 text = "text"
 transparent = "transparent"
+rotation_step = "rotation_step"
 
 [TextUpdate]
 transparent = "transparent"
 show_units = "show_units"
 precision = "precision"
+rotation_step = "rotation_step"
 
 [TextEntry]
 show_units = "show_units"
