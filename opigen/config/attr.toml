@@ -131,3 +131,6 @@ show_scale = "show_scale"
 [Symbol]
 initial_index = "initial_index"
 border_alarm_sensitive = "border_alarm_sensitive"
+
+[Table]
+show_toolbar = "show_toolbar"

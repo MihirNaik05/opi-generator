@@ -4,11 +4,13 @@ of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
 from typing import Literal
+from typing import Optional
 from enum import Enum
 
 from . import actions, scalings
 from .colors import Color
 from .borders import Border, BorderStyle
+from .table_columns import Column
 from opigen.config import get_attr_conf
 from opigen.config import get_ver_conf
 
@@ -1010,7 +1012,7 @@ class ImageBoolButton(ActionWidget):
 
 class SlideButton(ActionWidget):
 
-    TYPE_ID = None  # not available for BOY
+    TYPE_ID = 'TO-BE-SUPPORTED'  # not available for BOY
     TYPE = 'slide_button'
 
     def __init__(self, x, y, width, height, pv_name=None):
@@ -1019,6 +1021,28 @@ class SlideButton(ActionWidget):
         if pv_name is not None:
             self.phoebus_pv_name = pv_name
         self.phoebus_label = ''
+
+
+class Table(ActionWidget):
+
+    TYPE_ID = 'TO-BE-SUPPORTED'  # not available for BOY or to be supported
+    TYPE = 'table'
+
+    def __init__(self, x: int, y: int, width: int, height: int,
+                 pv_name: Optional[str] = None) -> None:
+        super(Table, self).__init__(Table.TYPE_ID, x, y, width, height)
+        if pv_name is not None:
+            self.phoebus_pv_name = pv_name
+        self.phoebus_columns = []
+
+    def reset_columns(self) -> None:
+        self.phoebus_columns = []
+
+    def add_column(self, column: Column) -> None:
+        self.phoebus_columns.append(column)
+
+    def add_columns(self, columns: list[Column]) -> None:
+        self.phoebus_columns.extend(columns)
 
 
 class WebBrowser(ActionWidget):

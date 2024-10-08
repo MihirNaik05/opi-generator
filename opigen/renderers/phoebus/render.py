@@ -16,6 +16,7 @@ from .text import OpiText
 from .traces import OpiTraces
 from .widget import OpiWidget
 from .symbols import OpiSymbols
+from .table_columns import OpiColumns
 
 
 def get_opi_renderer(widget):
@@ -66,6 +67,9 @@ def get_opi_renderer(widget):
     wr.add_renderer('scripts', OpiScripts())
 
     wr.add_renderer('points', OpiPoints())
+
+    # table
+    wr.add_renderer('columns', OpiColumns())
     return OpiRenderer(widget, wr)
 
 
