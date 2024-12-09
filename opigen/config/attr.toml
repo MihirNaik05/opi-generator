@@ -78,6 +78,7 @@ off_color = "off_color"
 on_label = "on_label"
 off_label = "off_label"
 bit = "bit"
+square = "square"
 
 [EmbeddedContainer]
 opi_file = "file"
