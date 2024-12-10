@@ -80,6 +80,9 @@ off_label = "off_label"
 bit = "bit"
 square = "square"
 
+[MultiStateLed]
+square = "square"
+
 [EmbeddedContainer]
 opi_file = "file"
 resize_behaviour = "resize"
