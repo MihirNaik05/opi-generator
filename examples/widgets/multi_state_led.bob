@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<display version="2.0.0">
+  <background_color>
+    <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+  </background_color>
+  <grid_visible>true</grid_visible>
+  <height>45</height>
+  <name>MultiStateLed</name>
+  <width>115</width>
+  <x>0</x>
+  <y>0</y>
+  <widget type="multi_state_led" version="2.0.0">
+    <height>30</height>
+    <name>MultiStateLed_0</name>
+    <pv_name>loc://ramp(0, 3, 1)</pv_name>
+    <states>
+      <state>
+        <value>0</value>
+        <label>State 1</label>
+        <color>
+          <color red="255" green="0" blue="0" name="Red"/>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>State 2</label>
+        <color>
+          <color red="0" green="0" blue="255" name="Blue"/>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>State 3</label>
+        <color>
+          <color red="0" green="255" blue="0" name="Green"/>
+        </color>
+      </state>
+    </states>
+    <width>100</width>
+    <x>20</x>
+    <y>20</y>
+  </widget>
+</display>
