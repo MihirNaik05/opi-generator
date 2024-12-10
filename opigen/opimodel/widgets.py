@@ -903,6 +903,29 @@ class Led(Widget):
         self.pv_name = pv
 
 
+class MultiStateLed(ActionWidget):
+
+    TYPE_ID = "To-Be-Supported-for-BOY-IF-APPLICABLE"
+    TYPE = 'multi_state_led'
+
+    def __init__(self, x, y, width, height, pv):
+        super(MultiStateLed, self).__init__(MultiStateLed.TYPE_ID, x, y, width, height)
+        self.pv_name = pv
+        # reset all states, add new ones with add_state()
+        self.states = []
+        self.phoebus_states = []
+
+    def reset_states(self):
+        self.states = []
+        self.phoebus_states = []
+
+    def add_state(self, value: int, label: str, color: Color):
+        """Add a new state.
+        """
+        self.states.append((value, label, color))
+        self.phoebus_states.append((value, label, color))
+
+
 class Byte(Widget):
 
     TYPE_ID = 'org.csstudio.opibuilder.widgets.bytemonitor'

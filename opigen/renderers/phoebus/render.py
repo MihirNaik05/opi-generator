@@ -17,6 +17,7 @@ from .traces import OpiTraces
 from .widget import OpiWidget
 from .symbols import OpiSymbols
 from .table_columns import OpiColumns
+from .states import OpiStates
 
 
 def get_opi_renderer(widget):
@@ -70,6 +71,9 @@ def get_opi_renderer(widget):
 
     # table
     wr.add_renderer('columns', OpiColumns())
+
+    # multi state led
+    wr.add_renderer('states', OpiStates(cr))
     return OpiRenderer(widget, wr)
 
 
