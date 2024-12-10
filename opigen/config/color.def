@@ -1,8 +1,29 @@
 # Alarm colours
-Minor = 255, 241, 0
+Minor = 255, 128, 0
 Major = 255, 0, 0
-Invalid = 255, 255, 255
-Disconnected = 255, 255, 255
+Invalid = 255, 0, 255
+Disconnected = 200, 0, 200
+
+# Phoebus display builder
+Phoebus: ActiveText = 255, 255, 0
+Phoebus: Attention = 255, 160, 0
+Phoebus: Disconnected = 200, 0, 200
+Phoebus: Grid = 128, 128, 128
+Phoebus: Invalid = 255, 0, 255
+Phoebus: Major = 255, 0, 0
+Phoebus: Minor = 255, 128, 0
+Phoebus: On = 0, 255, 0
+Phoebus: Off = 60, 100, 60
+Phoebus: Ok = 0, 255, 0
+Phoebus: Stop = 255, 0, 0
+Phoebus: Text = 0, 0, 0
+Phoebus: Background = 255, 255, 255
+Phoebus: HeaderBackground = 77, 77, 77
+Phoebus: HeaderForeground = 255, 255, 255
+Phoebus: ButtonBackground = 210, 210, 210
+Phoebus: ReadBackground = 240, 240, 240
+Phoebus: WriteBackground = 128, 255, 255
+Phoebus: Transparent = 255, 255, 255, 0
 
 # Widget colours
 Canvas = 200, 200, 200
