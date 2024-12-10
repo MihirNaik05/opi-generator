@@ -908,6 +908,15 @@ class MultiStateLed(ActionWidget):
     TYPE_ID = "To-Be-Supported-for-BOY-IF-APPLICABLE"
     TYPE = 'multi_state_led'
 
+    DEFAULT_COLORS = {
+        # 0: dark green: OFF
+        0: Color((60, 100, 60), name="OFF"),
+        # 1: green: ON
+        1: Color((0, 255, 0), name="ON"),
+        # -1: pink, Err (fallback)
+        -1: Color((255, 0, 255))
+    }
+
     def __init__(self, x, y, width, height, pv):
         super(MultiStateLed, self).__init__(MultiStateLed.TYPE_ID, x, y, width, height)
         self.pv_name = pv
@@ -920,10 +929,35 @@ class MultiStateLed(ActionWidget):
         self.phoebus_states = []
 
     def add_state(self, value: int, label: str, color: Color):
-        """Add a new state.
+        """ Add a new state.
         """
         self.states.append((value, label, color))
         self.phoebus_states.append((value, label, color))
+
+    def _get_state_color(self, i: int, n: int):
+        # Return the color for i-th state of total n states.
+        #
+        # starting at 3rd state (i=2), only change blue at different level
+        if i in (0, 1):
+            return MultiStateLed.DEFAULT_COLORS[i]
+        else:
+            if n < 9:
+                v0_blue = 80
+                d_blue = 40
+            else:
+                v0_blue = 40
+                d_blue = int((255 - v0_blue) / (n - 2))
+            b = (i - 2) * d_blue + v0_blue
+            if b > 255:
+                b = 255
+            return Color((10, 0, b), name=f"State {i + 1}")
+
+    def auto_add_states(self, n: int):
+        """ Automatically add *n* states, by default naming conventions.
+        """
+        for i in range(n):
+            color = self._get_state_color(i, n)
+            self.add_state(i, f"State {i + 1}", color)
 
 
 class Byte(Widget):
