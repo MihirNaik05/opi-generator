@@ -196,6 +196,14 @@ class Led(_widgets.Led):
         self.on_color = colors.EMERLAND
 
 
+class MultiStateLed(_widgets.MultiStateLed):
+
+    def __init__(self, x: int, y: int, width: int, height: int, pv_name: str,
+                 alarm_sensitive: bool = False):
+        _widgets.MultiStateLed.__init__(self, x, y, width, height, pv_name)
+        self.border_alarm_sensitive = alarm_sensitive
+
+
 class LedGreenDark(Led):
     def __init__(self, x, y, width, height, pv_name, alarm_sensitive=False):
         Led.__init__(self, x, y, width, height, pv_name, alarm_sensitive)

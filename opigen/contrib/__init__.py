@@ -4,6 +4,7 @@ from .widgets import SlideButton
 from .widgets import TextEntry
 from .widgets import TextUpdate
 from .widgets import Led, LedGreenDark
+from .widgets import MultiStateLed
 
 from .widgets import GroupingContainer
 from .widgets import EmbeddedContainer
