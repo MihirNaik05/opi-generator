@@ -170,11 +170,36 @@ def test_Led_has_correct_attributes(display, get_opi_renderer):
 
 def test_Led_has_correct_attributes_phoebus(display, get_bob_renderer):
     led = widgets.Led(10, 10, 20, 20, 'TEST')
+    led.square = True
+    led.on_label = "ON"
+    led.off_label = "OFF"
     display.add_child(led)
     renderer = get_bob_renderer(display)
     renderer.assemble()
     output = str(renderer)
     assert '<pv_name>TEST</pv_name>' in output
+    assert '<square>true</square>' in output
+    assert '<on_label>ON</on_label>' in output
+    assert '<off_label>OFF</off_label>' in output
+
+
+def test_MultiStateLed(display, get_bob_renderer):
+    mled = widgets.MultiStateLed(10, 10, 20, 20, "TEST")
+    mled.square = True
+    mled.add_state(0, "State 1", Color((255, 0, 0)))
+    mled.add_state(1, "State 2", Color((0, 255, 0)))
+    display.add_child(mled)
+    renderer = get_bob_renderer(display)
+    renderer.assemble()
+    output = str(renderer)
+    assert '<pv_name>TEST</pv_name>' in output
+    assert '<square>true</square>' in output
+    assert '<value>0</value>' in output
+    assert '<value>1</value>' in output
+    assert '<label>State 1</label>' in output
+    assert '<label>State 2</label>' in output
+    assert '<color red="255" green="0" blue="0"/>' in output
+    assert '<color red="0" green="255" blue="0"/>' in output
 
 
 def test_Byte_has_correct_attributes(display, get_opi_renderer):
