@@ -1,12 +1,18 @@
 import re
-from . import utils
 import sys
 
+from . import utils
 
-class Color(object):
-    """Representation of a color."""
 
-    def __init__(self, rgb=(0, 0, 0), name=None, alpha=None):
+_pattern = re.compile(r'(.*)=\s*(\d+)\D*(\d+)\D*(\d+)')
+
+
+class Color:
+    """ Representation of a color.
+    """
+
+    def __init__(self, rgb: tuple[int, int, int] = (0, 0, 0), name: str = None,
+                 alpha: int = None):
         """Creates a color object with given RGB values.
         Please note that alpha only works properly in Phoebus!"""
         self.red, self.green, self.blue = rgb
@@ -22,26 +28,22 @@ class Color(object):
         return str(self)
 
     def __eq__(self, other):
-        return self.red == other.red and \
-            self.green == other.green and \
-            self.blue == other.blue and \
-            self.name == other.name and \
-            self.alpha == other.alpha
+        return self.red == other.red and self.green == other.green and \
+               self.blue == other.blue and self.name == other.name and \
+               self.alpha == other.alpha
 
-
-_pattern = re.compile(r'(.*)=\s*(\d+)\D*(\d+)\D*(\d+)')
 
 
 def parse_color_file(filepath: str):
-    """ Parse the provided color.def file, create Color objects for each
+    """ Parse the provided `color.def` file, create Color objects for each
     defined color and attach them to the namespace of this module with
-    names converted into appropriate constants by the utils.mangle_name()
+    names converted into appropriate constants by the `utils.mangle_name()`
     function.
 
     Parameters
     ----------
     filepath : str
-        Filepath of the color file
+        Filepath of the color file.
     """
     with open(filepath, "r") as f:
         for line in f.readlines():

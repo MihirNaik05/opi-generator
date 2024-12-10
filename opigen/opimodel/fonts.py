@@ -1,6 +1,9 @@
 import re
-from . import utils
 import sys
+
+from typing import Union
+
+from . import utils
 
 REGULAR = 0
 BOLD = 1
@@ -26,22 +29,24 @@ STYLE_MAP = {
     BOLD_ITALIC: 'BOLD_ITALIC',
 }
 
+_pattern = re.compile(
+    r'([0-9a-zA-Z ]+)\s*=\s*([a-zA-Z ]+)\s*-\s*([a-zA-Z ]+)\s*-\s*([0-9]+)\s*(.*)'
+)
 
-class Font(object):
-    """Representation of a font."""
+
+class Font:
+    """ Representation of a font.
+    """
+
     fontname_set = set()
 
-    def __init__(self,
-                 name=None,
-                 fontface='Liberation Sans',
-                 size=15,
-                 style=REGULAR,
-                 pixels=True,
-                 **kws):
-        # If the font name is specified, and defined in CS-Studio's fonts.def
-        # than this overrides all over attributes.
-        # keyword arguments:
-        # phoebus_size : font size for phoebus in pixel
+    def __init__(self, name: str = None, fontface: str = 'Liberation Sans', size: int = 15,
+                 style: Union[int, str] = REGULAR, pixels: bool = True, **kws):
+        # If the specified font name is also defined in CS-Studio's `fonts.def`
+        # then this overrides all its attributes.
+        #
+        # Keyword arguments:
+        # `phoebus_size` :int, font size for Phoebus in pixel
         self.fontface = fontface
         self.size = size
         self.pixels = pixels
@@ -89,15 +94,10 @@ class Font(object):
         return "serif" in self.name.lower() or "serif" in self.fontface.lower()
 
 
-_pattern = re.compile(
-    r'([0-9a-zA-Z ]+)\s*=\s*([a-zA-Z ]+)\s*-\s*([a-zA-Z ]+)\s*-\s*([0-9]+)\s*(.*)'
-)
-
-
 def parse_font_file(filename: str):
-    """ Parse the provided font.def file, create Font objects for each
+    """ Parse the provided `font.def` file, create Font objects for each
     defined font and attach them to the namespace of this module with
-    names converted into appropriate constants by the utils.mangle_name()
+    names converted into appropriate constants by the `utils.mangle_name()`
     function. By default the font size unit is 'px'.
 
     Parameters
@@ -130,18 +130,14 @@ def parse_font_file(filename: str):
             else:
                 _size_bob = int(_size_bob[0])  # in px
 
-            _f = Font(_font_name,
-                      _family,
-                      _size,
-                      _style_enum,
-                      _is_pixel,
+            _f = Font(_font_name, _family, _size, _style_enum, _is_pixel,
                       phoebus_size=_size_bob)
             utils.add_attr_to_module(_module_name, _f, sys.modules[__name__])
 
 
 def update_fontface(fontface: str, mono_fontface: str = None, serif_fontface: str = None):
-    """Update fontface (family) for all registered fonts, if mono_fontface or serif_fontface
-    is not defined, do not update.
+    """ Update fontface (family) for all registered fonts, if `mono_fontface` or
+    `serif_fontface` is not defined, do not update.
 
     This function should be called at the end of import, and affects globally for all defined
     fonts.
@@ -159,8 +155,8 @@ def update_fontface(fontface: str, mono_fontface: str = None, serif_fontface: st
 
 
 def update_fontsize(increments: float = 1.0, unit: str = "px"):
-    """Change the fontsize for all registered fonts. If unit is "em", increase the percentage
-    of increments.
+    """ Change the fontsize for all registered fonts.
+    If the unit is "em", increase font size by the percentage defined by `increments`.
     """
     for font_name in Font.fontname_set:
         font = getattr(sys.modules[__name__], utils.mangle_name(font_name))
