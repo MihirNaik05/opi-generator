@@ -13,8 +13,9 @@ class Color:
 
     def __init__(self, rgb: tuple[int, int, int] = (0, 0, 0), name: str = None,
                  alpha: int = None):
-        """Creates a color object with given RGB values.
-        Please note that alpha only works properly in Phoebus!"""
+        """ Creates a color object with given RGB values.
+        Please note that alpha only works properly in Phoebus!
+        """
         self.red, self.green, self.blue = rgb
         self.name = name
         self.alpha = alpha
@@ -31,7 +32,6 @@ class Color:
         return self.red == other.red and self.green == other.green and \
                self.blue == other.blue and self.name == other.name and \
                self.alpha == other.alpha
-
 
 
 def parse_color_file(filepath: str):

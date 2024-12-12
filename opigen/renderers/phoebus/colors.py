@@ -2,7 +2,7 @@ import lxml.etree as et
 from .text import OpiText
 
 
-class OpiColor(object):
+class OpiColor:
 
     def render(self, widget_node, tag_name, color_model):
         parent_color_node = et.SubElement(widget_node, tag_name)
@@ -16,7 +16,7 @@ class OpiColor(object):
             color_node.set('alpha', str(color_model.alpha))
 
 
-class OpiColorLinearMeter(object):
+class OpiColorLinearMeter:
 
     def render(self, widget_node, tag_name, colors_model):
         colors_node = et.SubElement(widget_node, "colors")

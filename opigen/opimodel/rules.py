@@ -2,7 +2,7 @@ PV_VAL = "pv0"
 PV_SEVR = "pvSev0"
 
 
-class Rule(object):
+class Rule:
 
     def __init__(self, prop_id, name=None, out_exp='false'):
         """ Base class for rules.

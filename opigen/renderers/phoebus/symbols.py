@@ -1,7 +1,7 @@
 import lxml.etree as et
 
 
-class OpiSymbols(object):
+class OpiSymbols:
 
     def render(self, widget_node, tag_name, symbols_model: list[str]):
         symbols_node = et.SubElement(widget_node, "symbols")

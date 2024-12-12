@@ -1,6 +1,5 @@
-class ActionsModel(object):
-    """
-    Represents all actions attached to a widget.
+class ActionsModel:
+    """ Represents all actions attached to a widget.
     """
 
     def __init__(self, hook_first=True, hook_all=False):
@@ -35,9 +34,8 @@ class ActionsModel(object):
         return len(self._actions)
 
 
-class WritePv(object):
-    """
-    Action that writes the specified value to a named PV.
+class WritePv:
+    """ Action that writes the specified value to a named PV.
     """
 
     def __init__(self, pv, value, description=''):
@@ -59,9 +57,8 @@ class WritePv(object):
         self.phoebus_value = value
 
 
-class ExecuteCommand(object):
-    """
-    Action that executes a script command in the specified directory.
+class ExecuteCommand:
+    """ Action that executes a script command in the specified directory.
     """
 
     OPI_DIR = '$(opi.dir)'
@@ -89,15 +86,15 @@ class ExecuteCommand(object):
         self.phoebus_description = description
 
 
-class OpenFile(object):
-    """Action that opens a local file."""
+class OpenFile:
+    """ Action that opens a local file. """
     def __init__(self, path: str, description: str):
         self.phoebus_file = path
         self.phoebus_description = description
 
 
-class OpenOpi(object):
-    """Action that opens another opi file."""
+class OpenOpi:
+    """ Action that opens another opi file. """
 
     REPLACE_CURRENT = 0
     WORKBENCH_TAB = 1
@@ -128,8 +125,7 @@ class OpenOpi(object):
                  description=None,
                  macros=None,
                  parent_macros=True):
-        """
-        Construct OpenOpi action.
+        """ Construct OpenOpi action.
 
         Args:
             path (file) of opi to open
@@ -164,5 +160,5 @@ class OpenOpi(object):
         return self._parent_macros
 
 
-class Exit(object):
+class Exit:
     """Action that closes the current opi."""

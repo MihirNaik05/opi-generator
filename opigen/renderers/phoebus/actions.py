@@ -8,7 +8,7 @@ EXIT_SCRIPT = (
     'ScriptUtil.closeDisplay(widget);')
 
 
-class OpiAction(object):
+class OpiAction:
     """Base class for action renderers."""
 
     def __init__(self, text_renderer):
@@ -87,7 +87,7 @@ class OpiExit(OpiAction):
         desc_node.text = 'Exit'
 
 
-class OpiActions(object):
+class OpiActions:
     """Renderer for actions."""
 
     ACTION_MAPPING = {

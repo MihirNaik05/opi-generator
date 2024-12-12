@@ -3,7 +3,7 @@
 from lxml import etree as et
 
 
-class OpiTraces(object):
+class OpiTraces:
     """Class that handles rendering of Traces."""
 
     def __init__(self, color_renderer):

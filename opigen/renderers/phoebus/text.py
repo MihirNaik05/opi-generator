@@ -1,7 +1,7 @@
 import lxml.etree as et
 
 
-class OpiText(object):
+class OpiText:
 
     def render(self, widget_node, tag_name, model):
         text_node = et.SubElement(widget_node, tag_name)

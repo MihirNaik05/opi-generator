@@ -2,7 +2,7 @@ from lxml import etree as et
 from .colors import OpiColor
 
 
-class OpiTabs(object):
+class OpiTabs:
     """Rendering TabbedContainer."""
 
     def render(self, widget_node, tag_name, tabs_model):

@@ -3,7 +3,7 @@ import lxml.etree as et
 from opigen.opimodel import rules, colors
 
 
-class OpiRule(object):
+class OpiRule:
 
     def __init__(self, text_renderer, color_renderer):
         self._color = color_renderer

@@ -1,14 +1,19 @@
-def mangle_name(name):
-    """Convert the name found in a color or font configuration file into
-       a Python variable:
-           - convert to upper-case
-           - replace non-letters with underscores
-           - avoid consecutive underscores
+def mangle_name(name: str):
+    """ Convert the name found in a color or font configuration file into
+    a Python variable:
+    - convert to upper-case
+    - replace non-letters with underscores
+    - avoid consecutive underscores
 
-    Args:
-        name to convert
-    Returns:
-        converted name
+    Parameters
+    ----------
+    name : str
+        Name to convert.
+
+    Returns
+    -------
+    r: str
+        The converted name
     """
     last = ''
     deduped = []
@@ -27,7 +32,7 @@ def mangle_name(name):
 
 def add_attr_to_module(name, value, module):
     """Attach value to the namespace of module with a names converted
-       into appropriate an constant by the mangle_name() function.
+       into appropriate a constant by the mangle_name() function.
 
     Args:
         name to be converted and used

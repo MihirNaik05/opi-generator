@@ -3,16 +3,16 @@ Module containing widgets to describe opi files.  An opi has a root widget
 of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
+from enum import Enum
 from typing import Literal
 from typing import Optional
-from enum import Enum
 
-from . import actions, scalings
-from .colors import Color
-from .borders import Border, BorderStyle
-from .table_columns import Column
 from opigen.config import get_attr_conf
 from opigen.config import get_ver_conf
+from . import actions, scalings
+from .borders import Border, BorderStyle
+from .colors import Color
+from .table_columns import Column
 
 ATTR_MAP = get_attr_conf()
 VER_CONF = get_ver_conf()
@@ -71,7 +71,7 @@ class ResizeBehaviour:
 
 
 class ResizeBehaviour_Embeded:
-    # for embeded display (Phoebus)
+    # for embedded display (Phoebus)
     NO_RESIZE = 0  # no resize, add scroll if needed
     RESIZE_OPI_TO_FIT_CONTAINER = 1  # Size content to fit widget
     RESIZE_CONTAINER_TO_FIT_OPI = 2  # Size widget to match content
@@ -409,10 +409,10 @@ class Widget(object):
         """Return a namedTuple of WidgetGeometry.
         """
         x, y, width, height = self.x, self.y, self.width, self.height
-        topLeft, topRight = (x, y), (x + width, y)
-        bottomLeft, bottomRight = (x, y + height), (x + width, y + height)
-        return WidgetGeometry(x, y, width, height, topLeft, topRight,
-                              bottomLeft, bottomRight)
+        top_left, top_right = (x, y), (x + width, y)
+        bottom_left, bottom_right = (x, y + height), (x + width, y + height)
+        return WidgetGeometry(x, y, width, height, top_left, top_right,
+                              bottom_left, bottom_right)
 
 
 class ActionWidget(Widget):
@@ -1012,7 +1012,7 @@ class Symbol(ActionWidget):
         self.border_alarm_sensitive = border_alarm_sensitive
 
     def add_symbol(self, image_file: str):
-        """Add a image file as a new symbol.
+        """Add an image file as a new symbol.
         """
         self.symbols.append(image_file)
         self.phoebus_symbols.append(image_file)
@@ -1156,7 +1156,7 @@ class _ChartWidget(ActionWidget):
             ["Y Axis 1", True, 0, 100, True, True, None, None, None]]
         self.phoebus_traces = []
 
-        # Sets the x axis and first y axis to show their grids
+        # Sets the x-axis and first y-axis to show their grids
         self.set_axis_grid(True, 0)
         self.set_axis_grid(True, 1)
 
@@ -1286,8 +1286,8 @@ class _ChartWidget(ActionWidget):
         The trace will take the form of a bar graph. If no X PV is provided, the OPI will
         automatically assign values such that the trace's datapoints are on integers on the x-axis.
 
-        The index of the y axis a trace is assigned to is different from the overall axis index.
-        The default y axis has an index of 0 of y-axes, but an index of 1 overall since the x-axis
+        The index of the y-axis a trace is assigned to is different from the overall axis index.
+        The default y-axis has an index of 0 of y-axes, but an index of 1 overall since the x-axis
         is the 0th axis.
 
         Args:

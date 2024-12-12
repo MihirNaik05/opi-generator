@@ -4,7 +4,7 @@ import re
 import lxml.etree as et
 
 
-class OpiWidget(object):
+class OpiWidget:
 
     def __init__(self, text_renderer):
         self._text_renderer = text_renderer

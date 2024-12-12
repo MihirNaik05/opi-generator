@@ -1,7 +1,7 @@
 from lxml import etree as et
 
 
-class OpiPoints(object):
+class OpiPoints:
 
     def render(self, widget_node, tag_name, points_model):
         points_node = et.SubElement(widget_node, tag_name)

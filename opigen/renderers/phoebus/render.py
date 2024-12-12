@@ -1,5 +1,6 @@
 import os
 import shutil
+
 import lxml.etree as et
 
 from .actions import OpiActions
@@ -11,13 +12,13 @@ from .points import OpiPoints
 from .rules import OpiRule
 from .scalings import OpiDisplayScaling, OpiScaling
 from .scripts import OpiScripts
+from .states import OpiStates
+from .symbols import OpiSymbols
+from .table_columns import OpiColumns
 from .tabs import OpiTabs
 from .text import OpiText
 from .traces import OpiTraces
 from .widget import OpiWidget
-from .symbols import OpiSymbols
-from .table_columns import OpiColumns
-from .states import OpiStates
 
 
 def get_opi_renderer(widget):
@@ -77,7 +78,7 @@ def get_opi_renderer(widget):
     return OpiRenderer(widget, wr)
 
 
-class OpiRenderer(object):
+class OpiRenderer:
 
     def __init__(self, model, widget_renderer):
         self._model = model

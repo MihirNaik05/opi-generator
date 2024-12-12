@@ -35,7 +35,7 @@ BorderStyle_GroupBoxStyle_MAP = {
 }
 
 
-class Border(object):
+class Border:
 
     def __init__(self, style, width, color, alarm: bool):
         # style: only applies to BOY

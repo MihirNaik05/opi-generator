@@ -1,7 +1,7 @@
 from opigen.opimodel.borders import BorderStyle_GroupBoxStyle_MAP
 
 
-class OpiBorder(object):
+class OpiBorder:
 
     def __init__(self, text_renderer, color_renderer):
         self._text = text_renderer
