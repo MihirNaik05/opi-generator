@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+import fnmatch
+
+
 def mangle_name(name: str):
     """ Convert the name found in a color or font configuration file into
     a Python variable:
@@ -44,3 +48,25 @@ def add_attr_to_module(name, value, module):
         print('Warning: overwriting variable {} in module {}'.format(
             var, module))
     setattr(module, var, value)
+
+
+def filter_attributes(module, pattern: str):
+    """ Filter attributes of a Python module based on a wildcard pattern.
+
+    Parameters
+    ----------
+    module:
+        The loaded Python module.
+    pattern: str
+        The wildcard pattern to filter attributes.
+
+    Returns
+    -------
+    r : dict
+        A dictionary of matching attributes `{attribute_name: attribute_value}`.
+    """
+    return {
+        attr_name: getattr(module, attr_name)
+        for attr_name in dir(module)
+        if fnmatch.fnmatch(attr_name, pattern)
+    }
