@@ -28,6 +28,16 @@ line_width = "line_width"
 line_style = "line_style"
 background_color = "line_color"
 
+[HorizontalLine]
+line_width = "line_width"
+line_style = "line_style"
+background_color = "line_color"
+
+[VerticalLine]
+line_width = "line_width"
+line_style = "line_style"
+background_color = "line_color"
+
 [Label]
 text = "text"
 transparent = "transparent"

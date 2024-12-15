@@ -1,4 +1,5 @@
 import os
+from copy import deepcopy
 
 import opigen.opimodel.widgets as _widgets
 from opigen import (
@@ -277,6 +278,59 @@ class Arrow(_widgets.Polygon):
         self.add_points(
             *rotate_points((p1[0] - int(length / 2), p1[1]), pts, rotate)
         )
-        # set the same color for line/area color
+        self.set_color(color)
+
+    def set_color(self, color: Color):
+        """ Set the same color for line/area color.
+        """
         self.set_line_color(color)
         self.set_area_color(color)
+
+    def rotate(self, angle: float, ref_point: tuple[int, int] = None):
+        """ Rotate the points w.r.t. the reference point (x, y) by angle degree.
+        Note that the reference point is the relative inside the polygon.
+        """
+        if ref_point is None:
+            # the center of the polygon (relative inside)
+            ref_point = (self.width // 2, self.height // 2)
+        self.points = rotate_points(ref_point, self.points, angle)
+
+    def map_to_local(self, point: tuple[int, int]):
+        """ Return the point in the global canvas coordinate to the Arrow polygon.
+        """
+        x, y = point
+        print(x - self.x, y - self.y)
+        return x - self.x, y - self.y
+
+    def clone(self):
+        """ Return a copy of this widget.
+        """
+        return deepcopy(self)
+
+
+class HorizontalLine(_widgets.Line):
+
+    """ Create a horizontal line widget, starting from (x, y) with the length of *length*,
+    thickness of *thickness*, and color of *color*.
+    """
+
+    def __init__(self, x: int, y: int, length: int, thickness: int = 1, style: str = "solid",
+                 color: Color = None):
+        super(HorizontalLine, self).__init__(x, y, x + length, y, thickness, style)
+        if color is None:
+            color = Color((189, 195, 199), "Silver")
+        self.set_line_color(color)
+
+
+class VerticalLine(_widgets.Line):
+
+    """ Create a vertical line widget, starting from (x, y) with the length of *length*,
+    thickness of *thickness*, and color of *color*.
+    """
+
+    def __init__(self, x: int, y: int, length: int, thickness: int = 1, style: str = "solid",
+                 color: Color = None):
+        super(VerticalLine, self).__init__(x, y, x, y + length, thickness, style)
+        if color is None:
+            color = Color((189, 195, 199), "Silver")
+        self.set_line_color(color)
