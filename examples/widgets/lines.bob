@@ -10,9 +10,11 @@
   <x>0</x>
   <y>0</y>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="255" blue="0" name="Phoebus: ActiveText"/>
     </line_color>
     <line_style>0</line_style>
     <line_width>2</line_width>
@@ -26,12 +28,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="160" blue="0" name="Phoebus: Attention"/>
     </line_color>
     <line_style>1</line_style>
-    <line_width>3</line_width>
+    <line_width>2.5</line_width>
     <name>HorizontalLine_1</name>
     <points>
       <point x="0" y="0"/>
@@ -42,12 +46,14 @@
     <y>35</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="255" blue="255" name="Phoebus: Background"/>
     </line_color>
     <line_style>2</line_style>
-    <line_width>4</line_width>
+    <line_width>3.0</line_width>
     <name>HorizontalLine_2</name>
     <points>
       <point x="0" y="0"/>
@@ -58,12 +64,14 @@
     <y>50</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="210" green="210" blue="210" name="Phoebus: ButtonBackground"/>
     </line_color>
     <line_style>3</line_style>
-    <line_width>5</line_width>
+    <line_width>3.5</line_width>
     <name>HorizontalLine_3</name>
     <points>
       <point x="0" y="0"/>
@@ -74,12 +82,14 @@
     <y>65</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="200" green="0" blue="200" name="Phoebus: Disconnected"/>
     </line_color>
     <line_style>4</line_style>
-    <line_width>6</line_width>
+    <line_width>4.0</line_width>
     <name>HorizontalLine_4</name>
     <points>
       <point x="0" y="0"/>
@@ -90,12 +100,14 @@
     <y>80</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="128" green="128" blue="128" name="Phoebus: Grid"/>
     </line_color>
     <line_style>0</line_style>
-    <line_width>7</line_width>
+    <line_width>4.5</line_width>
     <name>HorizontalLine_5</name>
     <points>
       <point x="0" y="0"/>
@@ -106,12 +118,14 @@
     <y>95</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="77" green="77" blue="77" name="Phoebus: HeaderBackground"/>
     </line_color>
     <line_style>1</line_style>
-    <line_width>8</line_width>
+    <line_width>5.0</line_width>
     <name>HorizontalLine_6</name>
     <points>
       <point x="0" y="0"/>
@@ -122,12 +136,14 @@
     <y>110</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="255" blue="255" name="Phoebus: HeaderForeground"/>
     </line_color>
     <line_style>2</line_style>
-    <line_width>9</line_width>
+    <line_width>5.5</line_width>
     <name>HorizontalLine_7</name>
     <points>
       <point x="0" y="0"/>
@@ -138,12 +154,14 @@
     <y>125</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="0" blue="255" name="Phoebus: Invalid"/>
     </line_color>
     <line_style>3</line_style>
-    <line_width>10</line_width>
+    <line_width>6.0</line_width>
     <name>HorizontalLine_8</name>
     <points>
       <point x="0" y="0"/>
@@ -154,12 +172,14 @@
     <y>140</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>3</arrows>
     <height>1</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="0" blue="0" name="Phoebus: Major"/>
     </line_color>
     <line_style>4</line_style>
-    <line_width>11</line_width>
+    <line_width>6.5</line_width>
     <name>HorizontalLine_9</name>
     <points>
       <point x="0" y="0"/>
@@ -170,9 +190,11 @@
     <y>155</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="128" blue="0" name="Phoebus: Minor"/>
     </line_color>
     <line_style>0</line_style>
     <line_width>2</line_width>
@@ -186,12 +208,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="60" green="100" blue="60" name="Phoebus: Off"/>
     </line_color>
     <line_style>1</line_style>
-    <line_width>3</line_width>
+    <line_width>2.5</line_width>
     <name>VerticalLine_1</name>
     <points>
       <point x="0" y="0"/>
@@ -202,12 +226,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="0" green="255" blue="0" name="Phoebus: Ok"/>
     </line_color>
     <line_style>2</line_style>
-    <line_width>4</line_width>
+    <line_width>3.0</line_width>
     <name>VerticalLine_2</name>
     <points>
       <point x="0" y="0"/>
@@ -218,12 +244,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="0" green="255" blue="0" name="Phoebus: On"/>
     </line_color>
     <line_style>3</line_style>
-    <line_width>5</line_width>
+    <line_width>3.5</line_width>
     <name>VerticalLine_3</name>
     <points>
       <point x="0" y="0"/>
@@ -234,12 +262,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="240" green="240" blue="240" name="Phoebus: ReadBackground"/>
     </line_color>
     <line_style>4</line_style>
-    <line_width>6</line_width>
+    <line_width>4.0</line_width>
     <name>VerticalLine_4</name>
     <points>
       <point x="0" y="0"/>
@@ -250,12 +280,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="0" blue="0" name="Phoebus: Stop"/>
     </line_color>
     <line_style>0</line_style>
-    <line_width>7</line_width>
+    <line_width>4.5</line_width>
     <name>VerticalLine_5</name>
     <points>
       <point x="0" y="0"/>
@@ -266,12 +298,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="0" green="0" blue="0" name="Phoebus: Text"/>
     </line_color>
     <line_style>1</line_style>
-    <line_width>8</line_width>
+    <line_width>5.0</line_width>
     <name>VerticalLine_6</name>
     <points>
       <point x="0" y="0"/>
@@ -282,12 +316,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="255" blue="255" name="Phoebus: Transparent"/>
     </line_color>
     <line_style>2</line_style>
-    <line_width>9</line_width>
+    <line_width>5.5</line_width>
     <name>VerticalLine_7</name>
     <points>
       <point x="0" y="0"/>
@@ -298,12 +334,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="128" green="255" blue="255" name="Phoebus: WriteBackground"/>
     </line_color>
     <line_style>3</line_style>
-    <line_width>10</line_width>
+    <line_width>6.0</line_width>
     <name>VerticalLine_8</name>
     <points>
       <point x="0" y="0"/>
@@ -314,12 +352,14 @@
     <y>20</y>
   </widget>
   <widget type="polyline" version="2.0.0">
+    <arrow_length>10</arrow_length>
+    <arrows>1</arrows>
     <height>401</height>
     <line_color>
-      <color red="189" green="195" blue="199" name="Silver"/>
+      <color red="255" green="255" blue="0" name="Phoebus: ActiveText"/>
     </line_color>
     <line_style>4</line_style>
-    <line_width>11</line_width>
+    <line_width>6.5</line_width>
     <name>VerticalLine_9</name>
     <points>
       <point x="0" y="0"/>
