@@ -178,6 +178,9 @@ class LineStyle:
     DASHDOT = 3
     DASHDOTDOT = 4
 
+LineStyles: list[str] = ["solid", "dash", "dot", "dashdot", "dashdotdot"]
+LineStyleEnums: list[int] = [0, 1, 2, 3, 4]
+
 
 def str2LineStyle(s: str):
     """Convert string to LineStyle enum.
