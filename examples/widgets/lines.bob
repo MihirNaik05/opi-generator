@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<display version="2.0.0">
+  <background_color>
+    <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+  </background_color>
+  <grid_visible>true</grid_visible>
+  <height>416</height>
+  <name>Lines Widget</name>
+  <width>601</width>
+  <x>0</x>
+  <y>0</y>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>HorizontalLine_0</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>1</line_style>
+    <line_width>3</line_width>
+    <name>HorizontalLine_1</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>35</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>2</line_style>
+    <line_width>4</line_width>
+    <name>HorizontalLine_2</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>50</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>3</line_style>
+    <line_width>5</line_width>
+    <name>HorizontalLine_3</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>65</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>4</line_style>
+    <line_width>6</line_width>
+    <name>HorizontalLine_4</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>80</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>7</line_width>
+    <name>HorizontalLine_5</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>95</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>1</line_style>
+    <line_width>8</line_width>
+    <name>HorizontalLine_6</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>110</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>2</line_style>
+    <line_width>9</line_width>
+    <name>HorizontalLine_7</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>125</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>3</line_style>
+    <line_width>10</line_width>
+    <name>HorizontalLine_8</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>140</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>4</line_style>
+    <line_width>11</line_width>
+    <name>HorizontalLine_9</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="400" y="0"/>
+    </points>
+    <width>401</width>
+    <x>20</x>
+    <y>155</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>VerticalLine_0</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>470</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>1</line_style>
+    <line_width>3</line_width>
+    <name>VerticalLine_1</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>485</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>2</line_style>
+    <line_width>4</line_width>
+    <name>VerticalLine_2</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>500</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>3</line_style>
+    <line_width>5</line_width>
+    <name>VerticalLine_3</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>515</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>4</line_style>
+    <line_width>6</line_width>
+    <name>VerticalLine_4</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>530</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>7</line_width>
+    <name>VerticalLine_5</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>545</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>1</line_style>
+    <line_width>8</line_width>
+    <name>VerticalLine_6</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>560</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>2</line_style>
+    <line_width>9</line_width>
+    <name>VerticalLine_7</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>575</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>3</line_style>
+    <line_width>10</line_width>
+    <name>VerticalLine_8</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>590</x>
+    <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>401</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>4</line_style>
+    <line_width>11</line_width>
+    <name>VerticalLine_9</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="400"/>
+    </points>
+    <width>1</width>
+    <x>605</x>
+    <y>20</y>
+  </widget>
+</display>
