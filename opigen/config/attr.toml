@@ -138,3 +138,11 @@ border_alarm_sensitive = "border_alarm_sensitive"
 
 [Table]
 show_toolbar = "show_toolbar"
+
+[Polygon]
+points = "points"
+line_color = "line_color"
+
+[Arrow]
+points = "points"
+line_color = "line_color"

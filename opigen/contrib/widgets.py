@@ -1,8 +1,21 @@
-import opigen.opimodel.widgets as _widgets
-from opigen import fonts, colors, rules, scripts
-from opigen.opimodel.colors import Color
-from opigen.opimodel.borders import Border, BorderStyle
 import os
+
+import opigen.opimodel.widgets as _widgets
+from opigen import (
+    fonts,
+    colors,
+    rules,
+    scripts
+)
+from opigen.opimodel.colors import Color
+from opigen.opimodel.borders import (
+    Border,
+    BorderStyle
+)
+from opigen.contrib.utils import (
+    generate_arrow_points,
+    rotate_points
+)
 
 # default widget color configurations
 DEFAULT_DISPLAY_BG = Color((255, 255, 255), "DISPLAY_BG")
@@ -11,8 +24,9 @@ DEFAULT_TEXTENTRY_BG = Color((236, 240, 241), "TEXTENTRY_BG")
 DEFAULT_BORDER_COLOR = Color((0, 128, 255), "BORDER_BLUE")
 
 # absolute path for resource files, e.g. images.
-RES_DIRPATH = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                           'images'))
+RES_DIRPATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), 'images')
+)
 
 
 class ProgressBar(_widgets.ProgressBar):
@@ -240,3 +254,29 @@ class CheckBox(GroupingContainer):
 
     def set_font(self, font):
         self.chkbox.set_font(font)
+
+
+class Arrow(_widgets.Polygon):
+
+    def __init__(self, x: int, y: int, length: int, thickness: int,
+                 color: Color = DEFAULT_BORDER_COLOR, **kws):
+        """ Create an arrow widget pointing to the point (x, y), rotate with *rotate*
+        keyword argument, e.g. +30 clockwise, -30 counter-clockwise.
+
+        Examples:
+        >>> arrow = Arrow(300, 500, 100, 4, head_fraction=0.25, angle1=20, angle2=80)
+        """
+        super(self.__class__, self).__init__(x - length, y, length, thickness)
+
+        head_fraction = kws.get('head_fraction', 0.2)
+        angle1 = kws.get('angle1', 30)
+        angle2 = kws.get('angle2', 70)
+        rotate = kws.get('rotate', 0.0)
+        p1 = (length, int(thickness / 2))
+        pts = generate_arrow_points(p1, length, thickness, head_fraction, angle1, angle2)
+        self.add_points(
+            *rotate_points((p1[0] - int(length / 2), p1[1]), pts, rotate)
+        )
+        # set the same color for line/area color
+        self.set_line_color(color)
+        self.set_area_color(color)

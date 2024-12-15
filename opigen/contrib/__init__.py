@@ -1,4 +1,4 @@
-# Pre-cutomized widgets for BOY to match (close) Phoebus style.
+# Pre-customized widgets for BOY to match (close) Phoebus style.
 from .widgets import Display
 from .widgets import SlideButton
 from .widgets import TextEntry
@@ -13,3 +13,5 @@ from .widgets import Label
 from .widgets import ActionButton
 from .widgets import ProgressBar
 from .widgets import Spinner
+
+from .widgets import Arrow
