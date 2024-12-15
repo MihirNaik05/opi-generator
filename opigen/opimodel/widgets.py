@@ -192,6 +192,11 @@ def str2LineStyle(s: str):
             'dashdotdot': LineStyle.DASHDOTDOT}[s]
 
 
+LineArrowStyles: list[str] = ['none', 'from', 'to', 'both']
+LineArrowStyleEnums: list[int] = [0, 1, 2, 3]
+str2LineArrowStyle = lambda s: LineArrowStyles.index(s)
+
+
 class PointType:
     NONE = 0
     SQUARE = 1
@@ -717,6 +722,18 @@ class Line(Widget):
             c = Color((189, 195, 199), 'Silver')
         # background_color
         self.set_bg_color(c)
+
+    def set_arrow_style(self, s: str):
+        """ Set arrows style: none, from, to, both.
+        """
+        if s not in LineArrowStyles:
+            s = "none"
+        self.phoebus_arrows = str2LineArrowStyle(s)
+
+    def set_arrow_length(self, i: int):
+        """ Set arrow length if arrow style is not none.
+        """
+        self.phoebus_arrow_length = i
 
 
 class Label(Widget):
