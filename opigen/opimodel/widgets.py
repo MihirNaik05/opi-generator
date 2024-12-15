@@ -4,9 +4,11 @@ of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
 from enum import Enum
-from typing import Literal
-from typing import Optional
-
+from typing import (
+    Literal,
+    Optional,
+    Union
+)
 from opigen.config import get_attr_conf
 from opigen.config import get_ver_conf
 from . import actions, scalings
@@ -639,27 +641,59 @@ class Rectangle(ActionWidget):
         super(Rectangle, self).__init__(Rectangle.TYPE_ID, x, y, width, height)
 
 
+class Polygon(Widget):
+
+    TYPE_ID = "POLYGON-TO-BE-SUPPORTED-BOY"
+    TYPE = "polygon"
+
+    def __init__(self, x0: int, y0: int, width: int, height: int):
+        super(Polygon, self).__init__(Polygon.TYPE_ID, x0, y0, width, height)
+        self.points = []
+        self.set_line_color()
+        self.set_area_color()
+
+    def add_point(self, x: int, y: int):
+        """ Add a point to the polygon. The point (x, y) is relative to the polygon
+        rectangle area defined by (x0, y0, width, height).
+        """
+        self.points.append((x, y))
+
+    def add_points(self, *points):
+        """ Pass points in the form of (x1, y1), (x2, y2), ...
+        """
+        for x, y in points:
+            self.points.append((x, y))
+
+    def set_line_color(self, color: Union[Color, None] = None):
+        """ Set the line color.
+        """
+        if color is None:
+            color = Color((189, 195, 199), 'Silver')
+        self.line_color = color
+
+    def set_area_color(self, color: Union[Color, None] = None):
+        """ Set the area (background) color.
+        """
+        if color is None:
+            color = Color((218, 218, 218),
+                          'ControlAndButtons Background')
+        self.transparent = False
+        self.background_color = color
+
+
 class Line(Widget):
 
     TYPE_ID = 'org.csstudio.opibuilder.widgets.polyline'
     TYPE = 'polyline'
 
-    def __init__(self,
-                 x0,
-                 y0,
-                 x1,
-                 y1,
-                 line_width=1,
-                 line_style=LineStyle.SOLID):
+    def __init__(self, x0: int, y0: int, x1: int, y1: int,
+                 line_width: int = 1, line_style=LineStyle.SOLID):
         """ Widget x,y location is calculated to be the top-left corner of
             rectangle defined by the diagonal from (x0, y0) to (x1, y1).
             The width and height are the lengths of the sides.
         """
-        super(Line, self).__init__(Line.TYPE_ID,
-                                   x=min(x0, x1),
-                                   y=min(y0, y1),
-                                   width=abs(x0 - x1) + 1,
-                                   height=abs(y0 - y1) + 1)
+        super(Line, self).__init__(Line.TYPE_ID, x=min(x0, x1), y=min(y0, y1),
+                                   width=abs(x0 - x1) + 1, height=abs(y0 - y1) + 1)
         self.points = [(x0, y0), (x1, y1)]
         self.phoebus_points = [(x0 - self.x, y0 - self.y),
                                (x1 - self.x, y1 - self.y)]
