@@ -38,6 +38,11 @@ line_width = "line_width"
 line_style = "line_style"
 background_color = "line_color"
 
+[PointerLine]
+line_width = "line_width"
+line_style = "line_style"
+background_color = "line_color"
+
 [Label]
 text = "text"
 transparent = "transparent"
