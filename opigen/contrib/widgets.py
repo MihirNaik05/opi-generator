@@ -1,5 +1,6 @@
 import os
 from copy import deepcopy
+from typing import Union
 
 import opigen.opimodel.widgets as _widgets
 from opigen import (
@@ -9,10 +10,8 @@ from opigen import (
     scripts
 )
 from opigen.opimodel.colors import Color
-from opigen.opimodel.borders import (
-    Border,
-    BorderStyle
-)
+from opigen.opimodel.borders import Border
+from opigen.opimodel.enums import BorderStyle
 from opigen.contrib.utils import (
     generate_arrow_points,
     rotate_points
@@ -334,3 +333,33 @@ class VerticalLine(_widgets.Line):
         if color is None:
             color = Color((189, 195, 199), "Silver")
         self.set_line_color(color)
+
+
+class PointerLine(_widgets.Line):
+
+    """ A pointer line widget, starting from (x1, y2), via two 90 degree right turns to
+    the end point (x2, y2). Please, 90 degree right turns is true only if y2 keeps the same.
+
+    #       <-   l   ->
+    # ___   11________21
+    #  ^    |         |
+    #  h    |         v
+    # _v_   p1        p2
+    """
+
+    def __init__(self, x1: int, y1: int, x2: int, y2: Union[int, None] = None, height: int = 10,
+                 thickness: int = 1, arrow_length: int = 8, style: str = "solid",
+                 color: Color = None, arrow_style: str = "to"):
+        if y2 is None:
+            y2 = y1
+        x11, y11 = x1, y1 - height
+        x21, y21 = x2, y2 - height
+        super(PointerLine, self).__init__(x11, y11, x21, y21, thickness, style)
+        if color is None:
+            color = Color((189, 195, 199), "Silver")
+        self.set_line_color(color)
+        self.set_arrow_style(arrow_style)
+        self.set_arrow_length(arrow_length)
+        # add points
+        self.insert_point(0, x1, y1)
+        self.append_point(x2, y2)
