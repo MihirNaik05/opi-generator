@@ -535,8 +535,10 @@ class Line(Widget):
     def __init__(self, x0: int, y0: int, x1: int, y1: int,
                  line_width: int = 1, line_style: Union[int, str] = "solid"):
         """ Widget x,y location is calculated to be the top-left corner of
-            rectangle defined by the diagonal from (x0, y0) to (x1, y1).
-            The width and height are the lengths of the sides.
+        rectangle defined by the diagonal from `(x0, y0)` to `(x1, y1)`.
+        The width and height are the lengths of the sides.
+
+        The point `(x, y)` is measured in the global frame.
         """
         super(Line, self).__init__(Line.TYPE_ID, x=min(x0, x1), y=min(y0, y1),
                                    width=abs(x0 - x1) + 1, height=abs(y0 - y1) + 1)
@@ -549,13 +551,24 @@ class Line(Widget):
         self.line_style = line_style
         self.set_line_color()
 
-    def add_point(self, x, y):
-        """Add a point with x, y coordinate."""
+    def add_point(self, x: int, y: int):
+        """ Add a point with x, y coordinate, the same as `append_point`."""
+        self.append_point(x, y)
+
+    def append_point(self, x: int, y: int):
+        """ Append a point with x, y coordinate to the existing list of points.
+        """
         self.points.append((x, y))
         self.phoebus_points.append((x - self.x, y - self.y))
 
+    def insert_point(self, index: int, x: int, y: int):
+        """ Insert a point with x, y coordinate.
+        """
+        self.points.insert(index, (x, y))
+        self.phoebus_points.insert(index, (x - self.x, y - self.y))
+
     def set_line_color(self, c: Color = None):
-        """Set the line color."""
+        """ Set the line color."""
         if c is None:
             c = Color((189, 195, 199), 'Silver')
         # background_color
