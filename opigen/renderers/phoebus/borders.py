@@ -1,4 +1,4 @@
-from opigen.opimodel.borders import BorderStyle_GroupBoxStyle_MAP
+from opigen.opimodel.enums import BorderStyle_GroupBoxStyle_MAP
 
 
 class OpiBorder:

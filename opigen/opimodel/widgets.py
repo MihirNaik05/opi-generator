@@ -19,11 +19,7 @@ from . import (
     scalings
 )
 
-from .borders import (
-    Border,
-    BorderStyle
-)
-
+from .borders import Border
 from .colors import Color
 from .enums import (
     str2LineArrowStyle,
@@ -31,6 +27,7 @@ from .enums import (
     str2PointType,
     str2TraceType,
     BasicStyle,
+    BorderStyle,
     FormatType_MAP,
     HAlign,
     LineStyle,
@@ -39,7 +36,7 @@ from .enums import (
     ResizeBehaviour_MAP,
     RotationStep,
     TraceType,
-    VAlign,
+    VAlign
 )
 
 from .table_columns import Column
