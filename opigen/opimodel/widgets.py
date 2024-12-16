@@ -3,17 +3,45 @@ Module containing widgets to describe opi files.  An opi has a root widget
 of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
-from enum import Enum
 from typing import (
     Literal,
     Optional,
     Union
 )
-from opigen.config import get_attr_conf
-from opigen.config import get_ver_conf
-from . import actions, scalings
-from .borders import Border, BorderStyle
+
+from opigen.config import (
+    get_attr_conf,
+    get_ver_conf
+)
+
+from . import (
+    actions,
+    scalings
+)
+
+from .borders import (
+    Border,
+    BorderStyle
+)
+
 from .colors import Color
+from .enums import (
+    str2LineArrowStyle,
+    str2LineStyle,
+    str2PointType,
+    str2TraceType,
+    BasicStyle,
+    FormatType_MAP,
+    HAlign,
+    LineStyle,
+    PointType,
+    ResizeBehaviour,
+    ResizeBehaviour_MAP,
+    RotationStep,
+    TraceType,
+    VAlign,
+)
+
 from .table_columns import Column
 
 ATTR_MAP = get_attr_conf()
@@ -24,201 +52,14 @@ WidgetGeometry = namedtuple(
     'WidgetGeometry',
     'x, y, width, height, topLeft, topRight, bottomLeft, bottomRight')
 
+# tab direction map (BOY to BOB)
+TAB_HORIZONTAL_MAP = {True: 0, False: 1}
+
 
 def _get_widget_version(name: str):
     """Return the version string for the widget.
     """
     return VER_CONF.get(name, DEFAULT_VER)
-
-
-class RotationStep(Enum):
-    # zero degree
-    D0 = 0
-    # 90 degree
-    D90 = 1
-    # 180 degree
-    D180 = 2
-    # -90 degree
-    D_90 = 3
-
-
-class TraceType:
-    NONE = 0
-    LINE = 1
-    STEP = 2
-    ERROR_BARS = 3
-    LINE_ERROR_BARS = 4
-    BARS = 5
-
-
-def str2TraceType(s: str):
-    """Convert string to TraceType enum.
-    """
-    return {
-        "none": TraceType.NONE,
-        "line": TraceType.LINE,
-        "step": TraceType.STEP,
-        "errorbars": TraceType.ERROR_BARS,
-        "line_errorbars": TraceType.LINE_ERROR_BARS,
-        "bars": TraceType.BARS
-    }.get(s, TraceType.STEP)
-
-
-class ResizeBehaviour:
-    # for LinkingContainer (BOY)
-    RESIZE_OPI_TO_FIT_CONTAINER = 0  # Size *.opi to fit the container
-    RESIZE_CONTAINER_TO_FIT_OPI = 1  # Size the container to fit *.opi
-    CROP = 2  # Don't resize anything, crop if *.opi too large
-    SCROLL = 3  # Don't resize anything, add scrollbars if *.opi too large
-
-
-class ResizeBehaviour_Embeded:
-    # for embedded display (Phoebus)
-    NO_RESIZE = 0  # no resize, add scroll if needed
-    RESIZE_OPI_TO_FIT_CONTAINER = 1  # Size content to fit widget
-    RESIZE_CONTAINER_TO_FIT_OPI = 2  # Size widget to match content
-    STRETCH_OPI_TO_FIT_CONTAINER = 3  # Stretch content to fit widget
-    CROP = 4  # Crop content
-
-
-ResizeBehaviour_MAP = {
-    ResizeBehaviour.RESIZE_OPI_TO_FIT_CONTAINER:
-    ResizeBehaviour_Embeded.RESIZE_OPI_TO_FIT_CONTAINER,
-    ResizeBehaviour.RESIZE_CONTAINER_TO_FIT_OPI:
-    ResizeBehaviour_Embeded.RESIZE_CONTAINER_TO_FIT_OPI,
-    ResizeBehaviour.CROP: ResizeBehaviour_Embeded.CROP,
-    ResizeBehaviour.SCROLL: ResizeBehaviour_Embeded.NO_RESIZE,
-}
-
-
-class FormatType:
-    DEFAULT = 0
-    DECIMAL = 1
-    EXPONENTIAL = 2
-    HEX_32 = 3
-    STRING = 4
-    HEX_64 = 5
-    COMPACT = 6
-    ENGINEERING = 7
-    SEXAGESIMAL = 8
-    SEXAGESIMAL_HMS = 9
-    SEXAGESIMAL_DMS = 10
-
-
-class FormatType_PHOEBUS:
-    DEFAULT = 0
-    DECIMAL = 1
-    EXPONENTIAL = 2
-    ENGINEERING = 3
-    HEXADECIMAL = 4
-    COMPACT = 5
-    STRING = 6
-    SEXAGESIMAL = 7
-    SEXAGESIMAL_HMS = 8
-    SEXAGESIMAL_DMS = 9
-
-
-# for phoebus (BOY to BOB)
-FormatType_MAP = {
-    FormatType.DEFAULT: FormatType_PHOEBUS.DEFAULT,
-    FormatType.DECIMAL: FormatType_PHOEBUS.DECIMAL,
-    FormatType.EXPONENTIAL: FormatType_PHOEBUS.EXPONENTIAL,
-    FormatType.HEX_32: FormatType_PHOEBUS.HEXADECIMAL,
-    FormatType.STRING: FormatType_PHOEBUS.STRING,
-    FormatType.HEX_64: FormatType_PHOEBUS.HEXADECIMAL,
-    FormatType.COMPACT: FormatType_PHOEBUS.COMPACT,
-    FormatType.ENGINEERING: FormatType_PHOEBUS.ENGINEERING,
-    FormatType.SEXAGESIMAL: FormatType_PHOEBUS.SEXAGESIMAL,
-    FormatType.SEXAGESIMAL_HMS: FormatType_PHOEBUS.SEXAGESIMAL_HMS,
-    FormatType.SEXAGESIMAL_DMS: FormatType_PHOEBUS.SEXAGESIMAL_DMS,
-}
-
-# tab direction map (BOY to BOB)
-TAB_HORIZONTAL_MAP = {True: 0, False: 1}
-
-
-class BasicStyle:
-    # ActionButton, TextEntry
-    CLASSIC = 0
-    NATIVE = 1
-
-
-class HAlign:
-    """Enum describing horizontal alignment
-
-    This is typically used with the horizontal_alignment property.
-    """
-    LEFT = 0
-    CENTER = 1
-    RIGHT = 2
-
-
-class VAlign:
-    """Enum describing vertical alignment
-
-    This is typically used with the vertical_alignment property.
-    """
-    TOP = 0
-    MIDDLE = 1
-    BOTTOM = 2
-
-
-HA_RIGHT = HAlign.RIGHT
-HA_CENTER = HAlign.CENTER
-HA_LEFT = HAlign.LEFT
-VA_TOP = VAlign.TOP
-VA_MIDDLE = VAlign.MIDDLE
-VA_BOTTOM = VAlign.BOTTOM
-
-
-class LineStyle:
-    SOLID = 0
-    DASH = 1
-    DOT = 2
-    DASHDOT = 3
-    DASHDOTDOT = 4
-
-LineStyles: list[str] = ["solid", "dash", "dot", "dashdot", "dashdotdot"]
-LineStyleEnums: list[int] = [0, 1, 2, 3, 4]
-
-
-def str2LineStyle(s: str):
-    """Convert string to LineStyle enum.
-    """
-    return {'solid': LineStyle.SOLID,
-            'dash': LineStyle.DASH,
-            'dot': LineStyle.DOT,
-            'dashdot': LineStyle.DASHDOT,
-            'dashdotdot': LineStyle.DASHDOTDOT}[s]
-
-
-LineArrowStyles: list[str] = ['none', 'from', 'to', 'both']
-LineArrowStyleEnums: list[int] = [0, 1, 2, 3]
-str2LineArrowStyle = lambda s: LineArrowStyles.index(s)
-
-
-class PointType:
-    NONE = 0
-    SQUARE = 1
-    CIRCLE = 2
-    DIAMOND = 3
-    X = 4
-    TRIANGLE = 5
-
-
-def str2PointType(s: str):
-    """Convert string to PointType enum.
-    """
-    return {'none': PointType.NONE,
-            'square': PointType.SQUARE,
-            'sq': PointType.SQUARE,
-            'circle': PointType.CIRCLE,
-            'o': PointType.CIRCLE,
-            'diamond': PointType.DIAMOND,
-            'd': PointType.DIAMOND,
-            'x': PointType.X,
-            'triangle': PointType.TRIANGLE,
-            't': PointType.TRIANGLE}[s]
 
 
 class Widget(object):
@@ -695,7 +536,7 @@ class Line(Widget):
     TYPE = 'polyline'
 
     def __init__(self, x0: int, y0: int, x1: int, y1: int,
-                 line_width: int = 1, line_style=LineStyle.SOLID):
+                 line_width: int = 1, line_style: Union[int, str] = "solid"):
         """ Widget x,y location is calculated to be the top-left corner of
             rectangle defined by the diagonal from (x0, y0) to (x1, y1).
             The width and height are the lengths of the sides.
@@ -726,8 +567,6 @@ class Line(Widget):
     def set_arrow_style(self, s: str):
         """ Set arrows style: none, from, to, both.
         """
-        if s not in LineArrowStyles:
-            s = "none"
         self.phoebus_arrows = str2LineArrowStyle(s)
 
     def set_arrow_length(self, i: int):
