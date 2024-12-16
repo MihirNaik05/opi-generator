@@ -9,6 +9,7 @@ from .opimodel import fonts
 from .opimodel import rules
 from .opimodel import scripts
 from .opimodel import widgets
+from .opimodel import enums
 from .renderers import *
 
 # load font def
