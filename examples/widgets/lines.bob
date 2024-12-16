@@ -11,7 +11,7 @@
   <y>0</y>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="255" blue="0" name="Phoebus: ActiveText"/>
@@ -29,7 +29,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="160" blue="0" name="Phoebus: Attention"/>
@@ -47,7 +47,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="255" blue="255" name="Phoebus: Background"/>
@@ -65,7 +65,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="210" green="210" blue="210" name="Phoebus: ButtonBackground"/>
@@ -83,7 +83,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="200" green="0" blue="200" name="Phoebus: Disconnected"/>
@@ -101,7 +101,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="128" green="128" blue="128" name="Phoebus: Grid"/>
@@ -119,7 +119,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="77" green="77" blue="77" name="Phoebus: HeaderBackground"/>
@@ -137,7 +137,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="255" blue="255" name="Phoebus: HeaderForeground"/>
@@ -155,7 +155,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="0" blue="255" name="Phoebus: Invalid"/>
@@ -173,7 +173,7 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <arrow_length>10</arrow_length>
-    <arrows>3</arrows>
+    <arrows>2</arrows>
     <height>1</height>
     <line_color>
       <color red="255" green="0" blue="0" name="Phoebus: Major"/>
@@ -368,5 +368,45 @@
     <width>1</width>
     <x>605</x>
     <y>20</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <arrow_length>8</arrow_length>
+    <arrows>2</arrows>
+    <height>1</height>
+    <line_color>
+      <color red="0" green="0" blue="255" name="Blue"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>HorizontalLine_10</name>
+    <points>
+      <point x="0" y="20"/>
+      <point x="0" y="0"/>
+      <point x="100" y="0"/>
+      <point x="100" y="20"/>
+    </points>
+    <width>101</width>
+    <x>20</x>
+    <y>200</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <arrow_length>8</arrow_length>
+    <arrows>2</arrows>
+    <height>1</height>
+    <line_color>
+      <color red="189" green="195" blue="199" name="Silver"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>PointerLine_0</name>
+    <points>
+      <point x="0" y="20"/>
+      <point x="0" y="0"/>
+      <point x="80" y="0"/>
+      <point x="80" y="20"/>
+    </points>
+    <width>81</width>
+    <x>20</x>
+    <y>280</y>
   </widget>
 </display>
