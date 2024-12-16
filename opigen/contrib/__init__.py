@@ -17,3 +17,4 @@ from .widgets import Spinner
 from .widgets import Arrow
 from .widgets import HorizontalLine
 from .widgets import VerticalLine
+from .widgets import PointerLine
