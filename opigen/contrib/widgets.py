@@ -34,7 +34,7 @@ class ProgressBar(_widgets.ProgressBar):
     MINOR_COLOR = colors.CARROT
     MAJOR_COLOR = colors.ALIZARIN
     INVALID_COLOR = colors.INVALID
-    NORMAL_COLOR = colors.EMERLAND
+    NORMAL_COLOR = colors.EMERALD
     def __init__(self, x: int, y: int, width: int, height: int,
                  pv_name: str, minimum: float = 0, maximum: float = 100,
                  limits_from_pv: bool = False,
@@ -207,7 +207,7 @@ class Led(_widgets.Led):
         self.set_border(
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive))
         self.off_color = colors.ALIZARIN
-        self.on_color = colors.EMERLAND
+        self.on_color = colors.EMERALD
 
 
 class MultiStateLed(_widgets.MultiStateLed):
