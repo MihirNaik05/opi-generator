@@ -147,6 +147,10 @@ show_low = "show_low"
 show_lolo = "show_lolo"
 show_scale = "show_scale"
 
+[SlideButton]
+on_color = "on_color"
+off_color = "off_color"
+
 [Symbol]
 initial_index = "initial_index"
 border_alarm_sensitive = "border_alarm_sensitive"
