@@ -208,6 +208,7 @@ class Led(_widgets.Led):
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive))
         self.off_color = colors.ALIZARIN
         self.on_color = colors.EMERALD
+        self.set_font(fonts.DEFAULT)
 
 
 class MultiStateLed(_widgets.MultiStateLed):
