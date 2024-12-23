@@ -363,3 +363,15 @@ class PointerLine(_widgets.Line):
         # add points
         self.insert_point(0, x1, y1)
         self.append_point(x2, y2)
+
+
+class ComboBox(_widgets.ComboBox):
+
+    def __init__(self, x: int, y: int, width: int, height: int, pv_name: str,
+                 alarm_sensitive: bool = False):
+        _widgets.ComboBox.__init__(self, x, y, width, height, pv_name)
+        self.set_font(fonts.DEFAULT)
+        self.set_border(
+            Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive)
+        )
+

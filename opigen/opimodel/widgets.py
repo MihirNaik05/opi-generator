@@ -1286,3 +1286,12 @@ class StripChart(_ChartWidget):
 
     def set_title_font(self, font):
         self.title_font = font
+
+
+class ComboBox(ActionWidget):
+    TYPE_ID = "COMBOBOX-TO-BE-SUPPORTED-BOY"
+    TYPE = "combo"
+
+    def __init__(self, x: int, y: int, width: int, height: int, pv_name: str):
+        super(ComboBox, self).__init__(ComboBox.TYPE_ID, x, y, width, height)
+        self.pv_name = pv_name
