@@ -1,5 +1,4 @@
 import os
-from copy import deepcopy
 from typing import Union
 
 import opigen.opimodel.widgets as _widgets
@@ -299,13 +298,7 @@ class Arrow(_widgets.Polygon):
         """ Return the point in the global canvas coordinate to the Arrow polygon.
         """
         x, y = point
-        print(x - self.x, y - self.y)
         return x - self.x, y - self.y
-
-    def clone(self):
-        """ Return a copy of this widget.
-        """
-        return deepcopy(self)
 
 
 class HorizontalLine(_widgets.Line):

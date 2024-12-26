@@ -7,8 +7,6 @@ from opigen.renderers import Renderer
 
 from opigen.contrib import Arrow
 
-from copy import deepcopy
-
 
 def main():
     screen = Display(name="Arrow Widget", width=800, height=600)

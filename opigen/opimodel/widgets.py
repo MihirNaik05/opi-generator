@@ -3,6 +3,7 @@ Module containing widgets to describe opi files.  An opi has a root widget
 of type Display.  To create the opi, add widgets as children of this widget.
 """
 from collections import namedtuple
+from copy import deepcopy
 from typing import (
     Literal,
     Optional,
@@ -59,7 +60,7 @@ def _get_widget_version(name: str):
     return VER_CONF.get(name, DEFAULT_VER)
 
 
-class Widget(object):
+class Widget:
     """Base class for any widget to extend.
 
     Args:
@@ -261,6 +262,11 @@ class Widget(object):
         bottom_left, bottom_right = (x, y + height), (x + width, y + height)
         return WidgetGeometry(x, y, width, height, top_left, top_right,
                               bottom_left, bottom_right)
+
+    def clone(self):
+        """ Return a copy of this widget.
+        """
+        return deepcopy(self)
 
 
 class ActionWidget(Widget):
