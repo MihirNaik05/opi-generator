@@ -216,6 +216,7 @@ class MultiStateLed(_widgets.MultiStateLed):
                  alarm_sensitive: bool = False):
         _widgets.MultiStateLed.__init__(self, x, y, width, height, pv_name)
         self.border_alarm_sensitive = alarm_sensitive
+        self.set_font(fonts.DEFAULT)
 
 
 class LedGreenDark(Led):
