@@ -1,0 +1,3764 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<display version="2.0.0">
+  <background_color>
+    <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+  </background_color>
+  <grid_visible>true</grid_visible>
+  <height>506</height>
+  <name>ARIS CAM/VDs</name>
+  <width>1775</width>
+  <x>0</x>
+  <y>0</y>
+  <widget type="group" version="2.0.0">
+    <background_color>
+      <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+    </background_color>
+    <style>2</style>
+    <foreground_color>
+      <color red="127" green="140" blue="141" name="Asbestos"/>
+    </foreground_color>
+    <font>
+      <font family="Liberation Mono" size="15" style="REGULAR">Groupbox Name</font>
+    </font>
+    <height>80</height>
+    <name></name>
+    <transparent>false</transparent>
+    <width>1760</width>
+    <x>5</x>
+    <y>0</y>
+    <widget type="label" version="2.0.0">
+      <font>
+        <font family="Liberation Serif" size="28" style="BOLD">Title</font>
+      </font>
+      <height>45</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Label_0</name>
+      <text>ARIS Camera/Viewer Devices</text>
+      <vertical_alignment>1</vertical_alignment>
+      <width>1575.0</width>
+      <x>10</x>
+      <y>10</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <background_color>
+        <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_width>0</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+      </border_color>
+      <font>
+        <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+      </font>
+      <height>45</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <name>TextUpdate_0</name>
+      <pv_name>PHY:DATETIME_NOW</pv_name>
+      <transparent>true</transparent>
+      <vertical_alignment>2</vertical_alignment>
+      <width>1750</width>
+      <x>0</x>
+      <y>10</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <font>
+        <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+      </font>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <name>Label_1</name>
+      <text>☎</text>
+      <tooltip>Tong Zhang
+├Accelerator Physics Department
+├Telephone: x7421
+└Email: zhangt@frib.msu.edu</tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>2</vertical_alignment>
+      <width>25</width>
+      <x>1725</x>
+      <y>0</y>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <height>1</height>
+      <line_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </line_color>
+      <line_style>0</line_style>
+      <line_width>8</line_width>
+      <name>Line_0</name>
+      <points>
+        <point x="0" y="0"/>
+        <point x="1740" y="0"/>
+      </points>
+      <width>1741</width>
+      <x>10</x>
+      <y>55</y>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <height>1</height>
+      <line_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </line_color>
+      <line_style>0</line_style>
+      <line_width>4</line_width>
+      <name>Line_1</name>
+      <points>
+        <point x="0" y="0"/>
+        <point x="1740" y="0"/>
+      </points>
+      <width>1741</width>
+      <x>10</x>
+      <y>64</y>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <height>1</height>
+      <line_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </line_color>
+      <line_style>0</line_style>
+      <line_width>2</line_width>
+      <name>Line_2</name>
+      <points>
+        <point x="0" y="0"/>
+        <point x="1740" y="0"/>
+      </points>
+      <width>1741</width>
+      <x>10</x>
+      <y>69</y>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_3</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="1755" y="0"/>
+    </points>
+    <width>1756</width>
+    <x>5</x>
+    <y>90</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_2</name>
+    <text>Name</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_3</name>
+    <text>Type</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_4</name>
+    <text>Alias</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_5</name>
+    <text>x0 [mm]</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_6</name>
+    <text>y0 [mm]</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_7</name>
+    <text>σx [mm]</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_8</name>
+    <text>σy [mm]</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_9</name>
+    <text>ρxy</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_10</name>
+    <text>Intensity</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_11</name>
+    <text>Viola</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1303</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_12</name>
+    <text>/files/shared/ap/HLA/viola-config/</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_13</name>
+    <text>In?</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>233.0</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_14</name>
+    <text>Light</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>80</width>
+    <x>267.0</x>
+    <y>95</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="20" style="BOLD">Header 5</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_15</name>
+    <text>Controls</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>120</width>
+    <x>355.0</x>
+    <y>95</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_4</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="1755" y="0"/>
+    </points>
+    <width>1756</width>
+    <x>5</x>
+    <y>128</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_17</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_18</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>50</width>
+    <x>267.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_19</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>321.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_1</name>
+    <pv_name>FS_F1S1:CAM_D1000:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F1S1:CAM_D1000:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:CAM_D1000:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1000:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_0</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:CAM_D1000</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:CAM_D1000:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1000:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_1</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:CAM_D1000</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerThermal.opi</file>
+        <description>Open CAM/VD engineering page for FS_F1S1:CAM_D1000</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-cam-d1000</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>CAM</DEV>
+          <INST>D1000</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11000</MJPGPORT>
+          <INSTP>D1000</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_2</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:CAM_D1000</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_16</name>
+    <text>FS_F1S1:CAM_D1000</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_20</name>
+    <text>CAM</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_21</name>
+    <text>PTG-0</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_2</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_3</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_4</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_5</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_6</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>135</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_7</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1000:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>135</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_3</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F1S1:CAM_D1000:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>135</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_0</name>
+    <pv_name>FS_F1S1:CAM_D1000:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>135</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_23</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_24</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>50</width>
+    <x>267.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_25</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>321.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_8</name>
+    <pv_name>FS_F1S1:CAM_D1001:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F1S1:CAM_D1001:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:CAM_D1001:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1001:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_4</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:CAM_D1001</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:CAM_D1001:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1001:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_5</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:CAM_D1001</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerThermal.opi</file>
+        <description>Open CAM/VD engineering page for FS_F1S1:CAM_D1001</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-cam-d1001</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>CAM</DEV>
+          <INST>D1001</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11001</MJPGPORT>
+          <INSTP>D1001</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_6</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:CAM_D1001</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_22</name>
+    <text>FS_F1S1:CAM_D1001</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_26</name>
+    <text>CAM</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_27</name>
+    <text>PTG-1</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_9</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_10</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_11</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_12</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_13</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>175</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_14</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:CAM_D1001:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>175</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_7</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F1S1:CAM_D1001:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>175</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_1</name>
+    <pv_name>FS_F1S1:CAM_D1001:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>175</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_29</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_0</name>
+    <pv_name>FS_F1S1:LGT_D1184:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_0</name>
+    <pv_name>FS_F1S1:LGT_D1184:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_15</name>
+    <pv_name>FS_F1S1:VD_D1184:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F1S1:VD_D1184:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:VD_D1184:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:VD_D1184:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_8</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:VD_D1184</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S1:VD_D1184:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:VD_D1184:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_9</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:VD_D1184</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F1S1:VD_D1184</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-vd-d1184</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1184</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11184</MJPGPORT>
+          <INSTP>D1184</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_10</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:VD_D1184</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>215</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_28</name>
+    <text>FS_F1S1:VD_D1184</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>215</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_30</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>215</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_31</name>
+    <text>Wedge</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_16</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_17</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_18</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_19</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_20</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>215</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_21</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S1:VD_D1184:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>215</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_11</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F1S1:VD_D1184:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>215</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_2</name>
+    <pv_name>FS_F1S1:VD_D1184:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>215</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_33</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_1</name>
+    <pv_name>FS_F1S2:LGT_D1324:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_1</name>
+    <pv_name>FS_F1S2:LGT_D1324:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_22</name>
+    <pv_name>FS_F1S2:VD_D1324:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F1S2:VD_D1324:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S2:VD_D1324:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1324:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_12</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S2:VD_D1324</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S2:VD_D1324:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1324:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_13</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S2:VD_D1324</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F1S2:VD_D1324</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s2-vd-d1324</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1324</INST>
+          <SUB>F1S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11324</MJPGPORT>
+          <INSTP>D1324</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_14</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S2:VD_D1324</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>255</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_32</name>
+    <text>FS_F1S2:VD_D1324</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>255</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_34</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>255</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_35</name>
+    <text>DB0</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_23</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_24</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_25</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_26</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_27</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>255</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_28</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1324:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>255</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_15</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F1S2:VD_D1324:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>255</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_3</name>
+    <pv_name>FS_F1S2:VD_D1324:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>255</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_2</name>
+    <pv_name>FS_F1S2:VD_D1466:LMIN_RSTS</pv_name>
+    <width>28</width>
+    <x>233.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_2</name>
+    <pv_name>FS_F1S2:LGT_D1466:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_3</name>
+    <pv_name>FS_F1S2:LGT_D1466:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_29</name>
+    <pv_name>FS_F1S2:VD_D1466:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F1S2:VD_D1466:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S2:VD_D1466:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1466:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_16</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S2:VD_D1466</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F1S2:VD_D1466:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1466:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_17</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S2:VD_D1466</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F1S2:VD_D1466</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s2-cam-d1466</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1466</INST>
+          <SUB>F1S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11466</MJPGPORT>
+          <INSTP>D1466</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_18</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S2:VD_D1466</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_36</name>
+    <text>FS_F1S2:VD_D1466</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_37</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>295</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_38</name>
+    <text>DB1</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_30</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_31</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_32</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_33</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_34</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>295</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_35</name>
+    <precision>3</precision>
+    <pv_name>FS_F1S2:VD_D1466:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>295</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_19</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F1S2:VD_D1466:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>295</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_4</name>
+    <pv_name>FS_F1S2:VD_D1466:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>295</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_4</name>
+    <pv_name>FS_F2S1:VD_D1563:LMIN_RSTS</pv_name>
+    <width>28</width>
+    <x>233.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_3</name>
+    <pv_name>FS_F2S1:LGT_D1563:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_5</name>
+    <pv_name>FS_F2S1:LGT_D1563:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_36</name>
+    <pv_name>FS_F2S1:VD_D1563:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F2S1:VD_D1563:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F2S1:VD_D1563:cam1:Acquire</pv_name>
+        <description>Write FS_F2S1:VD_D1563:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_20</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F2S1:VD_D1563</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F2S1:VD_D1563:cam1:Acquire</pv_name>
+        <description>Write FS_F2S1:VD_D1563:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_21</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F2S1:VD_D1563</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F2S1:VD_D1563</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f2s1-cam-d1563</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F2S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1563</INST>
+          <SUB>F2S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11563</MJPGPORT>
+          <INSTP>D1563</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_22</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F2S1:VD_D1563</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>335</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_39</name>
+    <text>FS_F2S1:VD_D1563</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>335</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_40</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>335</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_41</name>
+    <text>DB2</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_37</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_38</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_39</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_40</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_41</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>335</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_42</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S1:VD_D1563:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>335</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_23</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F2S1:VD_D1563:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>335</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_5</name>
+    <pv_name>FS_F2S1:VD_D1563:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>335</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_43</name>
+    <text>-</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_4</name>
+    <pv_name>FS_F2S2:LGT_D1660:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_6</name>
+    <pv_name>FS_F2S2:LGT_D1660:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_43</name>
+    <pv_name>FS_F2S2:VD_D1660:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F2S2:VD_D1660:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F2S2:VD_D1660:cam1:Acquire</pv_name>
+        <description>Write FS_F2S2:VD_D1660:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_24</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F2S2:VD_D1660</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F2S2:VD_D1660:cam1:Acquire</pv_name>
+        <description>Write FS_F2S2:VD_D1660:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_25</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F2S2:VD_D1660</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F2S2:VD_D1660</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f2s2-cam-d1660</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F2S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1660</INST>
+          <SUB>F2S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11660</MJPGPORT>
+          <INSTP>D1660</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_26</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F2S2:VD_D1660</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>375</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_42</name>
+    <text>FS_F2S2:VD_D1660</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>375</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_44</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>375</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_45</name>
+    <text>DB3</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_44</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_45</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_46</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_47</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_48</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>375</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_49</name>
+    <precision>3</precision>
+    <pv_name>FS_F2S2:VD_D1660:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>375</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_27</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F2S2:VD_D1660:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>375</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_6</name>
+    <pv_name>FS_F2S2:VD_D1660:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>375</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_7</name>
+    <pv_name>FS_F3S1:VD_D1758:LMIN_RSTS</pv_name>
+    <width>28</width>
+    <x>233.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_5</name>
+    <pv_name>FS_F3S1:LGT_D1758:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_8</name>
+    <pv_name>FS_F3S1:LGT_D1758:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_50</name>
+    <pv_name>FS_F3S1:VD_D1758:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F3S1:VD_D1758:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F3S1:VD_D1758:cam1:Acquire</pv_name>
+        <description>Write FS_F3S1:VD_D1758:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_28</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F3S1:VD_D1758</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F3S1:VD_D1758:cam1:Acquire</pv_name>
+        <description>Write FS_F3S1:VD_D1758:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_29</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F3S1:VD_D1758</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F3S1:VD_D1758</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f3s1-cam-d1758</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F3S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1758</INST>
+          <SUB>F3S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11758</MJPGPORT>
+          <INSTP>D1758</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_30</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F3S1:VD_D1758</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>415</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_46</name>
+    <text>FS_F3S1:VD_D1758</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>415</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_47</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>415</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_48</name>
+    <text>DB4</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_51</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_52</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_53</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_54</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_55</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>415</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_56</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S1:VD_D1758:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>415</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_31</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F3S1:VD_D1758:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>415</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_7</name>
+    <pv_name>FS_F3S1:VD_D1758:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>415</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_9</name>
+    <pv_name>FS_F3S2:VD_D1856:LMIN_RSTS</pv_name>
+    <width>28</width>
+    <x>233.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="slide_button" version="2.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <label></label>
+    <name>SlideButton_6</name>
+    <pv_name>FS_F3S2:LGT_D1856:ON_CMD</pv_name>
+    <width>50</width>
+    <x>267.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_10</name>
+    <pv_name>FS_F3S2:LGT_D1856:ON_RCMD</pv_name>
+    <width>28</width>
+    <x>321.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Sans" size="15" style="REGULAR">Default Small</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_57</name>
+    <pv_name>FS_F3S2:VD_D1856:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv_name>FS_F3S2:VD_D1856:cam1:DetectorState_RBV</pv_name>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F3S2:VD_D1856:cam1:Acquire</pv_name>
+        <description>Write FS_F3S2:VD_D1856:cam1:Acquire 1</description>
+        <value>1</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_32</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F3S2:VD_D1856</tooltip>
+    <width>30</width>
+    <x>419.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="write_pv">
+        <pv_name>FS_F3S2:VD_D1856:cam1:Acquire</pv_name>
+        <description>Write FS_F3S2:VD_D1856:cam1:Acquire 0</description>
+        <value>0</value>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_33</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F3S2:VD_D1856</tooltip>
+    <width>30</width>
+    <x>451.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="open_display">
+        <file>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</file>
+        <description>Open CAM/VD engineering page for FS_F3S2:VD_D1856</description>
+        <target>tab</target>
+        <macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f3s2-cam-d1856</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F3S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1856</INST>
+          <SUB>F3S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11856</MJPGPORT>
+          <INSTP>D1856</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_34</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F3S2:VD_D1856</tooltip>
+    <width>30</width>
+    <x>483.0</x>
+    <y>455</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_49</name>
+    <text>FS_F3S2:VD_D1856</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>455</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_50</name>
+    <text>VD</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>455</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_51</name>
+    <text>DB5</text>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_58</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_59</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_60</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_61</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_62</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>455</y>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <font family="Liberation Mono" size="18" style="REGULAR">Monospace</font>
+    </font>
+    <format>2</format>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_63</name>
+    <precision>3</precision>
+    <pv_name>FS_F3S2:VD_D1856:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>455</y>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <actions>
+      <action type="command">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <name>ActionButton_35</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv_name>FS_F3S2:VD_D1856:CONF</pv_name>
+        <exp bool_exp="true">
+          <expression>pvStr0</expression>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <width>100</width>
+    <x>1303</x>
+    <y>455</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <font family="Liberation Sans" size="18" style="REGULAR">Default</font>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_8</name>
+    <pv_name>FS_F3S2:VD_D1856:CONF</pv_name>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>455</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>396</height>
+    <line_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_5</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="395"/>
+    </points>
+    <width>1</width>
+    <x>517</x>
+    <y>90</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>396</height>
+    <line_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_6</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="0" y="395"/>
+    </points>
+    <width>1</width>
+    <x>224</x>
+    <y>90</y>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <height>1</height>
+    <line_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_7</name>
+    <points>
+      <point x="0" y="0"/>
+      <point x="1755" y="0"/>
+    </points>
+    <width>1756</width>
+    <x>5</x>
+    <y>490</y>
+  </widget>
+</display>

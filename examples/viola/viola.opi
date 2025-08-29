@@ -1,0 +1,4311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <background_color>
+    <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+  </background_color>
+  <height>506</height>
+  <name>ARIS CAM/VDs</name>
+  <show_grid>true</show_grid>
+  <transparent>false</transparent>
+  <version>2.0.0</version>
+  <width>1775</width>
+  <x>0</x>
+  <y>0</y>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <background_color>
+      <color red="255" green="255" blue="255" name="DISPLAY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>1</border_style>
+    <border_color>
+      <color red="127" green="140" blue="141" name="Asbestos"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="11" style="0" pixels="false">Groupbox Name</fontdata>
+    </font>
+    <height>80</height>
+    <lock_children>true</lock_children>
+    <name></name>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1760</width>
+    <x>5</x>
+    <y>0</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <font>
+        <fontdata fontName="Liberation Serif" height="24" style="1" pixels="false">Title</fontdata>
+      </font>
+      <height>45</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Label_52</name>
+      <text>ARIS Camera/Viewer Devices</text>
+      <version>2.0.0</version>
+      <vertical_alignment>1</vertical_alignment>
+      <width>1575.0</width>
+      <x>10</x>
+      <y>10</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+      <background_color>
+        <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_width>0</border_width>
+      <border_style>0</border_style>
+      <border_color>
+        <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+      </border_color>
+      <font>
+        <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+      </font>
+      <height>45</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <name>TextUpdate_64</name>
+      <pv_name>PHY:DATETIME_NOW</pv_name>
+      <transparent>true</transparent>
+      <version>2.0.0</version>
+      <vertical_alignment>2</vertical_alignment>
+      <width>1750</width>
+      <x>0</x>
+      <y>10</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <font>
+        <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+      </font>
+      <height>25</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <name>Label_53</name>
+      <text>☎</text>
+      <tooltip>Tong Zhang
+├Accelerator Physics Department
+├Telephone: x7421
+└Email: zhangt@frib.msu.edu</tooltip>
+      <transparent>true</transparent>
+      <version>2.0.0</version>
+      <vertical_alignment>2</vertical_alignment>
+      <width>25</width>
+      <x>1725</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+      <background_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </background_color>
+      <height>1</height>
+      <line_style>0</line_style>
+      <line_width>8</line_width>
+      <name>Line_8</name>
+      <points>
+        <point x="10" y="55"/>
+        <point x="1750" y="55"/>
+      </points>
+      <transparent>false</transparent>
+      <version>2.0.0</version>
+      <width>1741</width>
+      <x>10</x>
+      <y>55</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+      <background_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </background_color>
+      <height>1</height>
+      <line_style>0</line_style>
+      <line_width>4</line_width>
+      <name>Line_9</name>
+      <points>
+        <point x="10" y="64"/>
+        <point x="1750" y="64"/>
+      </points>
+      <transparent>false</transparent>
+      <version>2.0.0</version>
+      <width>1741</width>
+      <x>10</x>
+      <y>64</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+      <background_color>
+        <color red="189" green="195" blue="199" name="Silver"/>
+      </background_color>
+      <height>1</height>
+      <line_style>0</line_style>
+      <line_width>2</line_width>
+      <name>Line_10</name>
+      <points>
+        <point x="10" y="69"/>
+        <point x="1750" y="69"/>
+      </points>
+      <transparent>false</transparent>
+      <version>2.0.0</version>
+      <width>1741</width>
+      <x>10</x>
+      <y>69</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <background_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </background_color>
+    <height>1</height>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_11</name>
+    <points>
+      <point x="5" y="90"/>
+      <point x="1760" y="90"/>
+    </points>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1756</width>
+    <x>5</x>
+    <y>90</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_54</name>
+    <text>Name</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_55</name>
+    <text>Type</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_56</name>
+    <text>Alias</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_57</name>
+    <text>x0 [mm]</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_58</name>
+    <text>y0 [mm]</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_59</name>
+    <text>σx [mm]</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_60</name>
+    <text>σy [mm]</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_61</name>
+    <text>ρxy</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_62</name>
+    <text>Intensity</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_63</name>
+    <text>Viola</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1303</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_64</name>
+    <text>/files/shared/ap/HLA/viola-config/</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_65</name>
+    <text>In?</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>233.0</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_66</name>
+    <text>Light</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>80</width>
+    <x>267.0</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="14" style="1" pixels="false">Header 5</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_67</name>
+    <text>Controls</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>120</width>
+    <x>355.0</x>
+    <y>95</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <background_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </background_color>
+    <height>1</height>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_12</name>
+    <points>
+      <point x="5" y="128"/>
+      <point x="1760" y="128"/>
+    </points>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1756</width>
+    <x>5</x>
+    <y>128</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_69</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_70</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>50</width>
+    <x>267.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_71</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>321.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_65</name>
+    <pv_name>FS_F1S1:CAM_D1000:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F1S1:CAM_D1000:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:CAM_D1000:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1000:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_36</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:CAM_D1000</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:CAM_D1000:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1000:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_37</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:CAM_D1000</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerThermal.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F1S1:CAM_D1000</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-cam-d1000</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>CAM</DEV>
+          <INST>D1000</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11000</MJPGPORT>
+          <INSTP>D1000</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_38</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:CAM_D1000</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_68</name>
+    <text>FS_F1S1:CAM_D1000</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_72</name>
+    <text>CAM</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_73</name>
+    <text>PTG-0</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_66</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_67</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_68</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_69</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_70</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_71</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1000:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_39</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F1S1:CAM_D1000:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_9</name>
+    <pv_name>FS_F1S1:CAM_D1000:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>135</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_75</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_76</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>50</width>
+    <x>267.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_77</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>30</width>
+    <x>321.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_72</name>
+    <pv_name>FS_F1S1:CAM_D1001:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F1S1:CAM_D1001:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:CAM_D1001:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1001:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_40</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:CAM_D1001</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:CAM_D1001:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:CAM_D1001:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_41</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:CAM_D1001</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerThermal.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F1S1:CAM_D1001</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-cam-d1001</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>CAM</DEV>
+          <INST>D1001</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11001</MJPGPORT>
+          <INSTP>D1001</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_42</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:CAM_D1001</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_74</name>
+    <text>FS_F1S1:CAM_D1001</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_78</name>
+    <text>CAM</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_79</name>
+    <text>PTG-1</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_73</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_74</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_75</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_76</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_77</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_78</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:CAM_D1001:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_43</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F1S1:CAM_D1001:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_10</name>
+    <pv_name>FS_F1S1:CAM_D1001:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>175</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_81</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_7</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F1S1:LGT_D1184:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_11</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F1S1:LGT_D1184:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_79</name>
+    <pv_name>FS_F1S1:VD_D1184:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F1S1:VD_D1184:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:VD_D1184:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:VD_D1184:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_44</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S1:VD_D1184</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S1:VD_D1184:cam1:Acquire</pv_name>
+        <description>Write FS_F1S1:VD_D1184:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_45</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S1:VD_D1184</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F1S1:VD_D1184</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s1-vd-d1184</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1184</INST>
+          <SUB>F1S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11184</MJPGPORT>
+          <INSTP>D1184</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_46</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S1:VD_D1184</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_80</name>
+    <text>FS_F1S1:VD_D1184</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_82</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_83</name>
+    <text>Wedge</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_80</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_81</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_82</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_83</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_84</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_85</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S1:VD_D1184:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_47</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F1S1:VD_D1184:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_11</name>
+    <pv_name>FS_F1S1:VD_D1184:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>215</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_85</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_8</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F1S2:LGT_D1324:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_12</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F1S2:LGT_D1324:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_86</name>
+    <pv_name>FS_F1S2:VD_D1324:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F1S2:VD_D1324:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S2:VD_D1324:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1324:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_48</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S2:VD_D1324</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S2:VD_D1324:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1324:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_49</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S2:VD_D1324</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F1S2:VD_D1324</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s2-vd-d1324</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1324</INST>
+          <SUB>F1S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11324</MJPGPORT>
+          <INSTP>D1324</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_50</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S2:VD_D1324</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_84</name>
+    <text>FS_F1S2:VD_D1324</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_86</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_87</name>
+    <text>DB0</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_87</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_88</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_89</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_90</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_91</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_92</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1324:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_51</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F1S2:VD_D1324:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_12</name>
+    <pv_name>FS_F1S2:VD_D1324:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>255</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_13</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F1S2:VD_D1466:LMIN_RSTS</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>233.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_9</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F1S2:LGT_D1466:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_14</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F1S2:LGT_D1466:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_93</name>
+    <pv_name>FS_F1S2:VD_D1466:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F1S2:VD_D1466:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S2:VD_D1466:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1466:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_52</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F1S2:VD_D1466</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F1S2:VD_D1466:cam1:Acquire</pv_name>
+        <description>Write FS_F1S2:VD_D1466:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_53</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F1S2:VD_D1466</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F1S2:VD_D1466</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f1s2-cam-d1466</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F1S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1466</INST>
+          <SUB>F1S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11466</MJPGPORT>
+          <INSTP>D1466</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_54</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F1S2:VD_D1466</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_88</name>
+    <text>FS_F1S2:VD_D1466</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_89</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_90</name>
+    <text>DB1</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_94</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_95</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_96</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_97</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_98</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_99</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F1S2:VD_D1466:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_55</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F1S2:VD_D1466:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_13</name>
+    <pv_name>FS_F1S2:VD_D1466:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>295</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_15</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F2S1:VD_D1563:LMIN_RSTS</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>233.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_10</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F2S1:LGT_D1563:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_16</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F2S1:LGT_D1563:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_100</name>
+    <pv_name>FS_F2S1:VD_D1563:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F2S1:VD_D1563:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F2S1:VD_D1563:cam1:Acquire</pv_name>
+        <description>Write FS_F2S1:VD_D1563:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_56</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F2S1:VD_D1563</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F2S1:VD_D1563:cam1:Acquire</pv_name>
+        <description>Write FS_F2S1:VD_D1563:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_57</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F2S1:VD_D1563</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F2S1:VD_D1563</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f2s1-cam-d1563</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F2S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1563</INST>
+          <SUB>F2S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11563</MJPGPORT>
+          <INSTP>D1563</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_58</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F2S1:VD_D1563</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_91</name>
+    <text>FS_F2S1:VD_D1563</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_92</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_93</name>
+    <text>DB2</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_101</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_102</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_103</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_104</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_105</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_106</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S1:VD_D1563:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_59</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F2S1:VD_D1563:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_14</name>
+    <pv_name>FS_F2S1:VD_D1563:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>335</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_95</name>
+    <text>-</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>28</width>
+    <x>233.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_11</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F2S2:LGT_D1660:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_17</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F2S2:LGT_D1660:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_107</name>
+    <pv_name>FS_F2S2:VD_D1660:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F2S2:VD_D1660:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F2S2:VD_D1660:cam1:Acquire</pv_name>
+        <description>Write FS_F2S2:VD_D1660:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_60</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F2S2:VD_D1660</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F2S2:VD_D1660:cam1:Acquire</pv_name>
+        <description>Write FS_F2S2:VD_D1660:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_61</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F2S2:VD_D1660</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F2S2:VD_D1660</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f2s2-cam-d1660</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F2S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1660</INST>
+          <SUB>F2S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11660</MJPGPORT>
+          <INSTP>D1660</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_62</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F2S2:VD_D1660</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_94</name>
+    <text>FS_F2S2:VD_D1660</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_96</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_97</name>
+    <text>DB3</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_108</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_109</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_110</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_111</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_112</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_113</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F2S2:VD_D1660:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_63</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F2S2:VD_D1660:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_15</name>
+    <pv_name>FS_F2S2:VD_D1660:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>375</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_18</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F3S1:VD_D1758:LMIN_RSTS</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>233.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_12</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F3S1:LGT_D1758:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_19</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F3S1:LGT_D1758:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_114</name>
+    <pv_name>FS_F3S1:VD_D1758:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F3S1:VD_D1758:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F3S1:VD_D1758:cam1:Acquire</pv_name>
+        <description>Write FS_F3S1:VD_D1758:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_64</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F3S1:VD_D1758</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F3S1:VD_D1758:cam1:Acquire</pv_name>
+        <description>Write FS_F3S1:VD_D1758:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_65</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F3S1:VD_D1758</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F3S1:VD_D1758</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f3s1-cam-d1758</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F3S1</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1758</INST>
+          <SUB>F3S1</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11758</MJPGPORT>
+          <INSTP>D1758</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_66</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F3S1:VD_D1758</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_98</name>
+    <text>FS_F3S1:VD_D1758</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_99</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_100</name>
+    <text>DB4</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_115</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_116</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_117</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_118</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_119</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_120</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S1:VD_D1758:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_67</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F3S1:VD_D1758:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_16</name>
+    <pv_name>FS_F3S1:VD_D1758:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>415</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_20</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F3S2:VD_D1856:LMIN_RSTS</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>233.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ImageBoolButton" version="1.0.0">
+    <auto_size>true</auto_size>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>SlideButton_13</name>
+    <off_image>.images/toggle_off.png</off_image>
+    <on_image>.images/toggle_on.png</on_image>
+    <pv_name>FS_F3S2:LGT_D1856:ON_CMD</pv_name>
+    <transparency>true</transparency>
+    <version>2.0.0</version>
+    <width>50</width>
+    <x>267.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>1</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <bulb_border>1</bulb_border>
+    <effect_3d>false</effect_3d>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>28</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>LedGreenDark_21</name>
+    <off_Color>Color Green LED: Off: (0, 96, 0)</off_Color>
+    <off_color>
+      <color red="231" green="76" blue="60" name="Alizarin"/>
+    </off_color>
+    <on_color>
+      <color red="0" green="255" blue="0" name="Green LED: On"/>
+    </on_color>
+    <pv_name>FS_F3S2:LGT_D1856:ON_RCMD</pv_name>
+    <version>2.0.0</version>
+    <width>28</width>
+    <x>321.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="12" style="0" pixels="false">Default Small</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextUpdate_121</name>
+    <pv_name>FS_F3S2:VD_D1856:cam1:DetectorState_RBV</pv_name>
+    <rules>
+      <rule prop_id="background_color" name="change background color" out_exp="false">
+        <pv trig="true">FS_F3S2:VD_D1856:cam1:DetectorState_RBV</pv>
+        <exp bool_exp="pv0 == 1">
+          <value>
+            <color red="0" green="255" blue="0" name="Green"/>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 == 0">
+          <value>
+            <color red="255" green="0" blue="0" name="Red"/>
+          </value>
+        </exp>
+        <exp bool_exp="true">
+          <value>
+            <color red="127" green="140" blue="141" name="Asbestos"/>
+          </value>
+        </exp>
+      </rule>
+    </rules>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>60</width>
+    <x>355.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F3S2:VD_D1856:cam1:Acquire</pv_name>
+        <description>Write FS_F3S2:VD_D1856:cam1:Acquire 1</description>
+        <value>1</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_68</name>
+    <text>▶</text>
+    <tooltip>Start acquire for FS_F3S2:VD_D1856</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>419.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>FS_F3S2:VD_D1856:cam1:Acquire</pv_name>
+        <description>Write FS_F3S2:VD_D1856:cam1:Acquire 0</description>
+        <value>0</value>
+        <timeout>10</timeout>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_69</name>
+    <text>■</text>
+    <tooltip>Stop acquire for FS_F3S2:VD_D1856</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>451.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>https://controls.ftc/opi/diag/AD/ViewerMixedDLight.opi</path>
+        <mode>1</mode>
+        <description>Open CAM/VD engineering page for FS_F3S2:VD_D1856</description>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <NAME>$(DEV) $(INST)</NAME>
+          <P>$(SYS)_$(SUB):$(DEV)_$(INST):</P>
+          <DEFAULT_PATH>/srv/data/cam/fs-f3s2-cam-d1856</DEFAULT_PATH>
+          <SYS>FS</SYS>
+          <SUBP>F3S2</SUBP>
+          <DEV>VD</DEV>
+          <INST>D1856</INST>
+          <SUB>F3S2</SUB>
+          <DEVL>LGT</DEVL>
+          <MJPGPORT>11856</MJPGPORT>
+          <INSTP>D1856</INSTP>
+          <MJPGURL>diag-cam-target</MJPGURL>
+        </macros>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>30</height>
+    <name>ActionButton_70</name>
+    <text>☰</text>
+    <tooltip>Open CAM/VD engineering page for FS_F3S2:VD_D1856</tooltip>
+    <version>3.0.0</version>
+    <width>30</width>
+    <x>483.0</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_101</name>
+    <text>FS_F3S2:VD_D1856</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>224</width>
+    <x>5</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_102</name>
+    <text>VD</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>55</width>
+    <x>517</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_103</name>
+    <text>DB5</text>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>67</width>
+    <x>580</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_122</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:XCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>655</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_123</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:YCEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>763</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_124</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:XRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>871</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_125</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:YRMS_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>979</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_126</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:CXY_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1087</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <background_color>
+      <color red="240" green="240" blue="240" name="TEXTUPDATE_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_width>0</border_width>
+    <border_style>0</border_style>
+    <border_color>
+      <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
+    </border_color>
+    <font>
+      <fontdata fontName="Liberation Mono" height="13" style="0" pixels="false">Monospace</fontdata>
+    </font>
+    <format_type>2</format_type>
+    <height>30</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>TextUpdate_127</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>FS_F3S2:VD_D1856:INTEN_RD</pv_name>
+    <show_units>false</show_units>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>100</width>
+    <x>1195</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0.0">
+    <actions hook="true" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>/usr/bin/start_viola.sh --set-dir /files/shared/ap/HLA/viola-config --setting /files/shared/ap/HLA/viola-config/$(name)</command>
+        <description>Start Viola</description>
+        <command_directory>/files/shared/ap/HLA/viola-config</command_directory>
+        <wait_time>10</wait_time>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <name>ActionButton_71</name>
+    <pv_name></pv_name>
+    <rules>
+      <rule prop_id="name" name="change name" out_exp="true">
+        <pv trig="true">FS_F3S2:VD_D1856:CONF</pv>
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+      </rule>
+    </rules>
+    <text>Open</text>
+    <tooltip>Open Viola with defined configuration.</tooltip>
+    <version>3.0.0</version>
+    <width>100</width>
+    <x>1303</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0.0">
+    <background_color>
+      <color red="236" green="240" blue="241" name="TEXTENTRY_BG"/>
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
+    <height>30</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>TextEntry_17</name>
+    <pv_name>FS_F3S2:VD_D1856:CONF</pv_name>
+    <transparent>false</transparent>
+    <version>3.0.0</version>
+    <vertical_alignment>1</vertical_alignment>
+    <width>350</width>
+    <x>1411</x>
+    <y>455</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <background_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </background_color>
+    <height>396</height>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_13</name>
+    <points>
+      <point x="517" y="90"/>
+      <point x="517" y="485"/>
+    </points>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1</width>
+    <x>517</x>
+    <y>90</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <background_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </background_color>
+    <height>396</height>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_14</name>
+    <points>
+      <point x="224" y="90"/>
+      <point x="224" y="485"/>
+    </points>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1</width>
+    <x>224</x>
+    <y>90</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <background_color>
+      <color red="149" green="165" blue="166" name="Concrete"/>
+    </background_color>
+    <height>1</height>
+    <line_style>0</line_style>
+    <line_width>1</line_width>
+    <name>Line_15</name>
+    <points>
+      <point x="5" y="490"/>
+      <point x="1760" y="490"/>
+    </points>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
+    <width>1756</width>
+    <x>5</x>
+    <y>490</y>
+  </widget>
+</display>
