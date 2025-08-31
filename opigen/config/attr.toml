@@ -67,6 +67,7 @@ increment = "increment"
 
 [GroupingContainer]
 transparent = "transparent"
+style = "style"
 
 [ActionButton]
 text = "text"
@@ -127,6 +128,9 @@ label_font = "label_font"
 [CheckBox]
 label = "label"
 
+[ComboBox]
+
+
 [ProgressBar]
 fill_color = "fill_color"
 
@@ -161,7 +165,13 @@ show_toolbar = "show_toolbar"
 [Polygon]
 points = "points"
 line_color = "line_color"
+line_width = "line_width"
+run_actions_on_mouse_click = "run_actions_on_mouse_click"
 
 [Arrow]
 points = "points"
 line_color = "line_color"
+
+[Rectangle]
+line_color = "line_color"
+run_actions_on_mouse_click = "run_actions_on_mouse_click"
