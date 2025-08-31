@@ -370,3 +370,18 @@ class ComboBox(_widgets.ComboBox):
             Border(BorderStyle.NONE, 1, DEFAULT_BORDER_COLOR, alarm_sensitive)
         )
 
+
+class Rectangle(_widgets.Rectangle):
+
+    def __init__(self, x: int, y: int, width: int, height: int,
+                 color: Color = DEFAULT_BORDER_COLOR):
+        super(self.__class__, self).__init__(x, y, width, height)
+
+        self.set_color(color)
+
+    def set_color(self, color: Color):
+        """ Set the same color for background and border.
+        """
+        self.set_bg_color(color)
+        self.line_color = color
+

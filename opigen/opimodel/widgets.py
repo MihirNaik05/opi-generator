@@ -492,8 +492,24 @@ class Rectangle(ActionWidget):
     def __init__(self, x, y, width, height):
         super(Rectangle, self).__init__(Rectangle.TYPE_ID, x, y, width, height)
 
+    def set_line_color(self, color: Union[Color, None] = None):
+        """ Set the line color.
+        """
+        if color is None:
+            color = Color((189, 195, 199), 'Silver')
+        self.line_color = color
 
-class Polygon(Widget):
+    def set_area_color(self, color: Union[Color, None] = None):
+        """ Set the area (background) color.
+        """
+        if color is None:
+            color = Color((218, 218, 218),
+                          'ControlAndButtons Background')
+        self.transparent = False
+        self.background_color = color
+
+
+class Polygon(ActionWidget):
 
     TYPE_ID = "POLYGON-TO-BE-SUPPORTED-BOY"
     TYPE = "polygon"
