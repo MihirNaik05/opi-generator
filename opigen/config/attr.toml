@@ -173,5 +173,6 @@ points = "points"
 line_color = "line_color"
 
 [Rectangle]
+line_width = "line_width"
 line_color = "line_color"
 run_actions_on_mouse_click = "run_actions_on_mouse_click"
