@@ -20,3 +20,4 @@ from .widgets import VerticalLine
 from .widgets import PointerLine
 
 from .widgets import ComboBox
+from .widgets import Rectangle
