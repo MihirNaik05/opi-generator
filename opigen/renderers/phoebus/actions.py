@@ -1,6 +1,6 @@
 import re
 import lxml.etree as et
-from opigen.opimodel import actions
+from opigen import actions
 from . import text
 
 EXIT_SCRIPT = (

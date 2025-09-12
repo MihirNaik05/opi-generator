@@ -1,6 +1,6 @@
-from opigen.opimodel import scripts
-from opigen.opimodel import widgets
-from opigen.opimodel.table_columns import Column
+from opigen import scripts
+from opigen import widgets
+from opigen.table_columns import Column
 from opigen.contrib import Display
 from opigen.renderers import Renderer
 

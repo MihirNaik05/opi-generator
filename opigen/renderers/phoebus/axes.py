@@ -2,7 +2,7 @@
 
 from lxml import etree as et
 
-from opigen.opimodel.colors import Color
+from opigen.colors import Color
 from .fonts import OpiFont
 
 

@@ -1,4 +1,4 @@
-from opigen.opimodel import utils
+from opigen import utils
 import pytest
 import sys
 

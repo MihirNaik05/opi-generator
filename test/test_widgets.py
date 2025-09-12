@@ -1,8 +1,8 @@
 import pytest
 
-from opigen.opimodel import widgets
-from opigen.opimodel import enums
-from opigen.opimodel.colors import Color
+from opigen import widgets
+from opigen import enums
+from opigen.colors import Color
 
 
 def test_widget_attribute_map(widget, get_opi_renderer, get_bob_renderer):

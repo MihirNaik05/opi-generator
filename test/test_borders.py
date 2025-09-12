@@ -1,6 +1,6 @@
-from opigen.opimodel import colors
-from opigen.opimodel.borders import Border
-from opigen.opimodel.enums import BorderStyle
+from opigen import colors
+from opigen.borders import Border
+from opigen.enums import BorderStyle
 
 BLACK = colors.Color((0, 0, 0), 'Black')
 

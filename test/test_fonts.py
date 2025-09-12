@@ -3,7 +3,7 @@ import tempfile
 
 import pytest
 
-from opigen.opimodel import fonts
+from opigen import fonts
 
 TEST_FONT_FILE = """dummy 1 = Dummy one-bold-19pt
 dummy 2 = Dummy two-italic-15px
@@ -11,7 +11,7 @@ dummy 3 = Dummy one-regular-14
 // comment line 1
 # comment line 2
 # do not trim the trailing spaces in the next line!
-dummy 4  =  another dummy font family  - regular  - 20  
+dummy 4  =  another dummy font family  - regular  - 20
 # define size for phoebus
 dummy 5 = Font name contains no digit - bold - 14pt, 24
 """

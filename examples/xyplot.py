@@ -2,8 +2,8 @@
 
 from opigen import Renderer
 from opigen.contrib import Display
-from opigen.opimodel.colors import Color
-from opigen.opimodel.widgets import XYPlot
+from opigen.colors import Color
+from opigen.widgets import XYPlot
 
 
 class Colors:

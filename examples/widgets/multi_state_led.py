@@ -1,6 +1,6 @@
 from opigen.contrib import Display
 from opigen import Renderer
-from opigen.opimodel.widgets import MultiStateLed
+from opigen.widgets import MultiStateLed
 from opigen import colors
 
 

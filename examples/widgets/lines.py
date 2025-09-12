@@ -2,10 +2,10 @@ from opigen.renderers import Renderer
 from opigen.contrib import Display, VerticalLine
 from opigen.contrib import HorizontalLine
 from opigen.contrib import PointerLine
-from opigen.opimodel.enums import LineStyles
+from opigen.enums import LineStyles
 from itertools import cycle
 from opigen import colors
-from opigen.opimodel.utils import filter_attributes
+from opigen.utils import filter_attributes
 
 
 def main():
