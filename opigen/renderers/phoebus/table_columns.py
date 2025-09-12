@@ -1,5 +1,5 @@
 import lxml.etree as et
-from opigen.opimodel.table_columns import Column
+from opigen.table_columns import Column
 from .text import OpiText
 
 _boolean_str_map = {False: 'false', True: 'true'}

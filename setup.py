@@ -28,7 +28,7 @@ setup(
     author='Tong Zhang',
     author_email='zhangt@frib.msu.edu',
     packages=[
-        'opigen.renderers', 'opigen.renderers.css', 'opigen.opimodel',
+        'opigen.renderers', 'opigen.renderers.css',
         'opigen.contrib', 'opigen.config', 'opigen.renderers.phoebus',
         'opigen',
     ],
@@ -36,7 +36,6 @@ setup(
         'opigen.renderers': 'opigen/renderers',
         'opigen.renderers.css': 'opigen/renderers/css',
         'opigen.renderers.phoebus': 'opigen/renderers/phoebus',
-        'opigen.opimodel': 'opigen/opimodel',
         'opigen.contrib': 'opigen/contrib',
         'opigen.config': 'opigen/config',
         'opigen': 'opigen',

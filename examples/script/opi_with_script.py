@@ -2,8 +2,8 @@
 
 from opigen import Renderer
 from opigen.contrib import Display
-from opigen.opimodel import widgets
-from opigen.opimodel.scripts import Script
+from opigen import widgets
+from opigen.scripts import Script
 
 # Create a new Display
 display = Display(1200, 800, "XYPlot Example")

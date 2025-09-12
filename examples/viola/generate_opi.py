@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from opigen import actions, colors, fonts, rules, widgets
-from opigen.opimodel.enums import (
+from opigen.enums import (
     HA_RIGHT, HA_CENTER, HA_LEFT, VA_TOP, VA_MIDDLE, VA_BOTTOM,
     FormatType, BasicStyle
 )

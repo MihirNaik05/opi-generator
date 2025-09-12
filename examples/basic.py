@@ -1,4 +1,4 @@
-from opimodel import colors, fonts, rules, widgets
+from opigen import colors, fonts, rules, widgets
 from renderers.css import render
 import os
 

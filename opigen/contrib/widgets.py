@@ -1,16 +1,16 @@
 import os
 from typing import Union
 
-import opigen.opimodel.widgets as _widgets
+import opigen.widgets as _widgets
 from opigen import (
     fonts,
     colors,
     rules,
     scripts
 )
-from opigen.opimodel.colors import Color
-from opigen.opimodel.borders import Border
-from opigen.opimodel.enums import BorderStyle
+from opigen.colors import Color
+from opigen.borders import Border
+from opigen.enums import BorderStyle
 from opigen.contrib.utils import (
     generate_arrow_points,
     rotate_points

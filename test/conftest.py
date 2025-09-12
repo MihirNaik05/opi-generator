@@ -1,6 +1,6 @@
 import pytest
 
-from opigen.opimodel import widgets
+from opigen import widgets
 from opigen.renderers import css_render
 from opigen.renderers import phoebus_render
 

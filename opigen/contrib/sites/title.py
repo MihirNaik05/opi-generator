@@ -6,9 +6,9 @@
 
 import os
 from opigen.contrib import GroupingContainer
-from opigen.opimodel.borders import Border
+from opigen.borders import Border
 from opigen import colors, widgets, fonts
-from opigen.opimodel.enums import (
+from opigen.enums import (
     HA_LEFT,
     HA_RIGHT,
     VA_BOTTOM,

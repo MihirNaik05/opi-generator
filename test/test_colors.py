@@ -1,5 +1,5 @@
 import os
-from opigen.opimodel import colors
+from opigen import colors
 import pytest
 import tempfile
 
