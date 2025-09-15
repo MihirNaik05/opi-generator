@@ -11,8 +11,7 @@ def main_rule():
     widget = TextUpdate(5, 5, 50, 20, my_pv)
     screen.add_child(widget)
     # Use a rule to change the background color
-    widget.add_rule(
-        SelectionRule(
+    rule = SelectionRule(
             # the widget attribute to change
             "background_color",
             # PV as the trigger on value changes
@@ -23,7 +22,9 @@ def main_rule():
             [(1, colors.GREEN), (0, colors.RED)],
             # fallback attribute value
             else_val=colors.WHITE
-        ))
+    )
+    rule.add_pv("loc://dummy_pv(1)", trigger=False)
+    widget.add_rule(rule)
     # Generate the OPI file
     Renderer(screen).to_bob("page-rule.bob")
 
