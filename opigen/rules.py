@@ -27,12 +27,12 @@ class Rule:
     def get_out_exp(self):
         return self._out_exp
 
-    def add_extra_pv(self, pv_name: str, triggered: bool = True):
-        """Add extra PV, marking as triggered or not.
+    def add_pv(self, pv_name: str, trigger: bool = True):
+        """Add a PV, as a trigger of the rule or not.
         # return self to support widget.add_rule(
             <rule-class>.add_extra_pv(xxx))
         """
-        self._extra_pvs.append((pv_name, triggered))
+        self._extra_pvs.append((pv_name, trigger))
         return self
 
 
