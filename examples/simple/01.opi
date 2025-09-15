@@ -7,6 +7,8 @@
   <height>600</height>
   <name>BPM Readings</name>
   <show_grid>true</show_grid>
+  <transparent>false</transparent>
+  <version>2.0.0</version>
   <width>800</width>
   <x>0</x>
   <y>0</y>
@@ -15,6 +17,7 @@
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label_0</name>
     <text>LS1_CA01:BPM_D1129</text>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>200</width>
     <x>5</x>
@@ -30,10 +33,15 @@
     <border_color>
       <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
     </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
     <height>25</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>TextUpdate_0</name>
     <pv_name>VA:LS1_CA01:BPM_D1129:X_RD</pv_name>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>60</width>
     <x>210</x>
@@ -49,10 +57,15 @@
     <border_color>
       <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
     </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
     <height>25</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>TextUpdate_1</name>
     <pv_name>VA:LS1_CA01:BPM_D1129:Y_RD</pv_name>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>60</width>
     <x>275</x>
@@ -63,6 +76,7 @@
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label_1</name>
     <text>LS1_CA01:BPM_D1144</text>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>200</width>
     <x>5</x>
@@ -78,10 +92,15 @@
     <border_color>
       <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
     </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
     <height>25</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>TextUpdate_2</name>
     <pv_name>VA:LS1_CA01:BPM_D1144:X_RD</pv_name>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>60</width>
     <x>210</x>
@@ -97,10 +116,15 @@
     <border_color>
       <color red="0" green="128" blue="255" name="BORDER_BLUE"/>
     </border_color>
+    <font>
+      <fontdata fontName="Liberation Sans" height="13" style="0" pixels="false">Default</fontdata>
+    </font>
     <height>25</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>TextUpdate_3</name>
     <pv_name>VA:LS1_CA01:BPM_D1144:Y_RD</pv_name>
+    <transparent>false</transparent>
+    <version>2.0.0</version>
     <vertical_alignment>1</vertical_alignment>
     <width>60</width>
     <x>275</x>
