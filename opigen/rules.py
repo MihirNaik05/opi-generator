@@ -158,13 +158,15 @@ class SelectionRule(Rule):
                  auto_fill_val=True):
         # if auto_fill_val is True, expand bool_exp with "pv0" or "pvSev0" with val_options,
         # otherwise, only put val_options.
+        # e.g., in the case of out_exp = "true", set a tuple of ("true", "pv0/pvSev0/pvStr0")
+        # as a val option is usually wanted.
         """ Simple selection rule setting specified property to one of a
             number of possible values based on the pv value, e.g.:
 
             widget.rules = []
             opts = [(-1, colors.INVALID), (1, colors.MAJOR), (2, colors.MINOR)]
             val_opts = [(10, colors.RED), (20, colors.BLUE)]
-            widget.rules.append(
+            widget.add_rule(
                 rules.SelectionRule('on_color', pv_name,
                     val_options=val_opts,
                     sevr_options=opts,
@@ -200,7 +202,11 @@ class SelectionRule(Rule):
         self._else = else_val
         self._sevr_options = sevr_options
         self._val_options = val_options
-        self._auto_fill_val = auto_fill_val
+        if out_exp == "true":
+            self._auto_fill_val = False
+        else:
+            self._auto_fill_val = auto_fill_val
+
 
     def get_auto_fill_val(self):
         return self._auto_fill_val
