@@ -42,7 +42,6 @@ l.add_rule(
         "Update Text",
         [("true", "pvStr0")],
         out_exp="true",
-        auto_fill_val=False,
     ))
 l.set_font(fonts.FINE_PRINT)
 d.add_child(l)
