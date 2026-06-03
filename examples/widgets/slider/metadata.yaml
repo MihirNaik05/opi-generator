@@ -1,0 +1,19 @@
+id: basic_scaled_slider
+
+difficulty: beginner
+
+category:
+  - widgets
+
+widgets:
+  - Display
+  - Label
+
+rules: []
+
+scripts: []
+
+actions: []
+
+tags:
+  - beginner
