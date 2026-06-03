@@ -387,7 +387,7 @@ class LinearMeter(ActionWidget):
                  level_lolo: float = 10.0, level_low: float = 20.0,
                  level_high: float = 80.0, level_hihi: float = 90.0,
                  enable_gradient: bool = False,
-                 highlight_active_region: bool = True):
+                 highlight_active_region: bool = True,):
         super(LinearMeter, self).__init__(LinearMeter.TYPE_ID, x, y, width, height)
         # dict, {attr_name: (is_color_attr?, attr_value)}
         self.phoebus_linear_meter_colors = self.linear_meter_colors = {}
@@ -1148,9 +1148,7 @@ class _ChartWidget(ActionWidget):
         setattr(self, f"axis_{axis}_maximum", maximum)
 
         # Phoebus
-        self.phoebus_axes[axis][1] = False # autoscale
-        self.phoebus_axes[axis][2] = minimum
-        self.phoebus_axes[axis][3] = maximum
+        self.phoebus_axes[axis][1] = False # autoscale self.phoebus_axes[axis][2] = minimum self.phoebus_axes[axis][3] = maximum
 
     def auto_scale(self, on: str, axis: int):
         """Set axis autoscale on or off.
