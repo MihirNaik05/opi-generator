@@ -40,7 +40,8 @@ have to extend it. To extend or update it, follow these steps:
 ## Global Formatting
 
 `opigen` provides global formatting options through `opigen/config/color.def` and `opigen/config/font.def`.
-The search occurs in the following order:
+
+The module searches for `*.def` in the following order:
 
 1. `cwd/*.def`
 2. `~/.opigen/*.def`
